@@ -2025,7 +2025,7 @@ ul, ol {
   font-family: var(--font-primary);
 }
 
-/* Next Project Bottom Bar */
+/* Next & Prev Project Bottom Bar */
 .case-next-project-bar {
   margin-top: 5rem;
   border-top: 1.5px solid var(--text-primary);
@@ -2035,6 +2035,11 @@ ul, ol {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.case-nav-preview {
+  display: flex;
+  flex-direction: column;
 }
 
 .next-kicker {
@@ -2052,6 +2057,13 @@ ul, ol {
   font-weight: 300;
   letter-spacing: -0.03em;
   color: var(--text-primary);
+}
+
+.case-nav-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 /* About Modal Styling */
@@ -2504,7 +2516,7 @@ ul, ol {
     justify-content: space-between;
   }
 
-  /* Next Project Bar on Mobile */
+  /* Next & Prev Project Bar on Mobile */
   .case-next-project-bar {
     margin-top: 2.5rem;
     padding-top: 1.75rem;
@@ -2515,6 +2527,20 @@ ul, ol {
 
   .next-title {
     font-size: 1.65rem;
+  }
+
+  .case-nav-btn-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .case-nav-btn-group .btn-editorial {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 0.85rem;
   }
   
   .about-stats-grid {

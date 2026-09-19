@@ -62,50 +62,88 @@ document.addEventListener('DOMContentLoaded', () => {
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Mobile Liquidity View & Typography Hierarchy' },
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Dark Theme High-Contrast Interaction State' }
       ],
+      prevId: 'infuse',
       nextId: 'paybolt'
     },
-    paybolt: {
-      title: 'PayBolt',
-      category: 'Web Design &bull; High-Velocity Checkout',
-      client: 'PayBolt Global',
-      year: '2020',
-      discipline: 'Web Design & Motion',
-      scope: 'Editorial Web Experience, Motion Design, Front-End Architecture',
-      location: 'Chicago, USA',
-      description: 'PayBolt simplifies global cross-border payments through a stripped-back, high-velocity checkout experience. The art direction emphasizes architectural precision, ultra-clean Swiss typography, and instantaneous feedback loops.',
-      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8c6acfaefc4fc5148e3a_pawel-czerwinski-W_mfoOi1Elc-unsplash.jpg',
-      editorialSplit: {
-        col1Heading: '01 / Checkout Velocity',
-        col1Text: 'Every fraction of a second in cross-border checkout impacts cart abandon rates. We engineered a single-surface checkout architecture that eliminates page reloads and multi-step modal labyrinths.',
-        col2Heading: '02 / Motion Architecture',
-        col2Text: 'Micro-animations guide the eye effortlessly through routing selections, currency conversions, and cryptographic authorization with instantaneous visual validation.'
-      },
-      splitFeature: {
-        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg',
-        eyebrow: 'ZERO FRICTION COMMERCE',
-        quote: 'Speed as the purest expression of brand luxury.',
-        text: 'By eliminating decorative clutter and prioritizing razor-sharp typographic alignment, PayBolt transforms functional commerce into an elevated sensory experience.',
-        metrics: [
-          { label: 'Checkout Time', value: '1.4s' },
-          { label: 'Conversion', value: '+34%' },
-          { label: 'Uptime', value: '99.99%' }
-        ]
-      },
-      carousel: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8c6acfaefc4fc5148e3a_pawel-czerwinski-W_mfoOi1Elc-unsplash.jpg', caption: 'Global Currency Routing Matrix' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Single-Surface Rapid Checkout Flow' }
-      ],
-      deliverablesList: [
-        { num: '01', title: 'Single-Surface Checkout Architecture', desc: 'Ultra-fast asynchronous checkout interface with instant biometric settlement.' },
-        { num: '02', title: 'Kinetic Motion Design System', desc: 'Physics-based micro-interactions delivering instantaneous state verification.' },
-        { num: '03', title: 'Cross-Border Currency Router', desc: 'Real-time multi-currency exchange interface with predictive rate calculation.' }
-      ],
-      galleryAsymmetric: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Terminal Interface Architecture' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Mobile Micro-Interaction States' }
-      ],
-      nextId: 'fundmate'
+    dubaiharbour: {
+  title: 'Dubai Harbour Residences',
+  category: 'Luxury Real Estate • Digital Experience Design',
+  client: 'Dubai Harbour Residences',
+  year: '2024',
+  discipline: 'UX/UI Design & Digital Experience',
+  scope: 'Website Design, Information Architecture, Responsive UX, Visual Design, Design System',
+  liveUrl: 'https://www.dubaiharbourresidences.com/',
+  location: 'Dubai, UAE',
+  description: 'Dubai Harbour Residences is a premium waterfront residential destination offering luxury coastal living in one of Dubai’s most sought-after locations. The digital experience was designed to showcase architectural excellence, marina-front lifestyle, and world-class amenities through immersive storytelling and conversion-focused user journeys.',
+  heroImage: 'images/dubai-harbour-hero-image.jpg',
+
+  editorialSplit: {
+    col1Heading: '01 / Luxury Living Narrative',
+    col1Text: 'The challenge was to communicate the exclusivity of the residences while maintaining a clear pathway toward property exploration and enquiry. Large-format imagery, curated content hierarchy, and immersive transitions create a seamless storytelling experience.',
+    col2Heading: '02 / Conversion-Driven Experience',
+    col2Text: 'Every interaction was designed to guide prospective buyers naturally through residence collections, amenities, floor plans, and location highlights while reducing friction in the enquiry journey.'
+  },
+
+  splitFeature: {
+    image: 'images/dubai-harbour-feature.jpg',
+    eyebrow: 'WATERFRONT LUXURY REDEFINED',
+    quote: 'A digital experience inspired by the elegance of coastal living.',
+    text: 'Combining premium visual storytelling with intuitive navigation, the platform transforms property discovery into an engaging journey that reflects the sophistication and exclusivity of the development.',
+    metrics: [
+      { label: 'Responsive', value: '100%' },
+      { label: 'Page Speed', value: '<2.5s' },
+      { label: 'Devices', value: 'All Screens' }
+    ]
+  },
+
+  carousel: [
+    {
+      image: 'images/dubai-harbour-carousel-01.jpg',
+      caption: 'Waterfront Lifestyle & Marina Experience'
     },
+    {
+      image: 'images/dubai-harbour-carousel-02.jpg',
+      caption: 'Luxury Residences & Architectural Showcase'
+    }
+  ],
+
+  deliverablesList: [
+    {
+      num: '01',
+      title: 'Luxury Real Estate Marketing Website',
+      desc: 'Designed a premium digital platform focused on showcasing residences, lifestyle experiences, and property investment opportunities.'
+    },
+    {
+      num: '02',
+      title: 'Information Architecture & User Flows',
+      desc: 'Structured intuitive journeys for property discovery, floor plan exploration, and lead generation.'
+    },
+    {
+      num: '03',
+      title: 'Responsive Design System',
+      desc: 'Created scalable UI components, typography standards, and layout patterns for consistent experiences across devices.'
+    },
+    {
+      num: '04',
+      title: 'Interactive Property Exploration',
+      desc: 'Developed immersive content experiences highlighting amenities, location benefits, and architectural features.'
+    }
+  ],
+
+  galleryAsymmetric: [
+    {
+      image: 'images/dubai-harbour-gallery-01.jpg',
+      caption: 'Marina Waterfront Lifestyle Presentation'
+    },
+    {
+      image: 'images/dubai-harbour-gallery-02.jpg',
+      caption: 'Luxury Residence & Interior Experience'
+    }
+  ],
+
+  prevId: 'paybolt',
+  nextId: 'wellafi'
+},
     fundmate: {
       title: 'FundMate',
       category: 'Concept &bull; Venture Asset Intelligence',
@@ -146,6 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg', caption: 'Analytical Report Generation View' },
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Due Diligence Matrix Perspective' }
       ],
+      prevId: 'paybolt',
       nextId: 'wealthwave'
     },
     wealthwave: {
@@ -189,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Brand Guidelines Book Layout' },
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Digital Spatial Experience' }
       ],
+      prevId: 'fundmate',
       nextId: 'infuse'
     },
     infuse: {
@@ -231,6 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Sound Design Telemetry' },
         { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Acoustic Waveform Detail' }
       ],
+      prevId: 'wealthwave',
       nextId: 'moneymaven'
     }
   };
@@ -478,6 +519,7 @@ document.addEventListener('DOMContentLoaded', () => {
       caseModalCategory.innerHTML = `${data.category} &bull; ARCHIVE REF: ${projectId.toUpperCase()}`;
     }
 
+    const prevProject = projectsData[data.prevId];
     const nextProject = projectsData[data.nextId];
 
     caseModalContent.innerHTML = `
@@ -504,6 +546,13 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="meta-v-label">Scope</span>
               <span class="meta-v-value">${data.scope}</span>
             </div>
+            <div class="case-meta-vertical-item">
+              <span class="meta-v-label">Live URL</span>
+              <span class="meta-v-value">
+                <a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer">View Project</a>
+              </span>
+            </div>
+
           </div>
 
           <!-- Right: Project Narrative -->
@@ -626,16 +675,26 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       ` : ''}
 
-      <!-- 8. Next Case Study Bottom Action Bar -->
+      <!-- 8. Case Study Bottom Action Bar (Prev / Next Project Navigation) -->
       <div class="case-next-project-bar">
-        <div>
-          <span class="next-kicker">NEXT CASE STUDY</span>
+        <div class="case-nav-preview">
+          <span class="next-kicker">PROJECT NAVIGATION</span>
           <h3 class="next-title">${nextProject ? nextProject.title : 'Overview'}</h3>
         </div>
-        <button type="button" class="btn-editorial solid" id="nextProjectBtn" data-next-id="${data.nextId}">
-          <span>Load Next Project</span>
-          <span class="btn-arrow-icon">&rarr;</span>
-        </button>
+        <div class="case-nav-btn-group">
+          ${data.prevId ? `
+            <button type="button" class="btn-editorial stroke" id="prevProjectBtn" data-prev-id="${data.prevId}">
+              <span class="btn-arrow-icon">&larr;</span>
+              <span>Load Prev Project</span>
+            </button>
+          ` : ''}
+          ${data.nextId ? `
+            <button type="button" class="btn-editorial solid" id="nextProjectBtn" data-next-id="${data.nextId}">
+              <span>Load Next Project</span>
+              <span class="btn-arrow-icon">&rarr;</span>
+            </button>
+          ` : ''}
+        </div>
       </div>
     `;
 
@@ -671,6 +730,16 @@ document.addEventListener('DOMContentLoaded', () => {
     caseModalOverlay.classList.add('is-active');
     caseModalOverlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    // Prev project button event listener
+    const prevBtn = document.getElementById('prevProjectBtn');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        const prevId = prevBtn.getAttribute('data-prev-id');
+        openCaseStudy(prevId);
+        caseModalContent.scrollTop = 0;
+      });
+    }
 
     // Next project button event listener
     const nextBtn = document.getElementById('nextProjectBtn');
