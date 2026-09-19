@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Max Pratt — Digital Designer & Art Director</title>
+  <meta name="description"
+    content="Digital Designer and Art Director currently based in Lisbon. Over 16 awards and mentions from renowned industry players like Awwwards, FWA, and CSSDA." />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="is-loading">
+
+  <!-- Page Veil Loader -->
+  <div class="page-overlay" id="pageOverlay">
+    <div class="overlay-transition">
+      <div class="logo-loader-wrapper">
+        <div class="logo-loader-img">Max Pratt</div>
+        <div class="loader-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Kinetic Magnetic Cursor -->
+  <div class="cursor" id="customCursor">
+    <div class="cursor-dot-1" id="cursorBadge">
+      <span class="cursor-text" id="cursorText">OPEN</span>
+    </div>
+    <div class="cursor-dot-2" id="cursorFollower"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="navigation" role="banner">
+    <div class="nav-container">
+      <div class="nav-grid">
+
+        <!-- Brand / Kinetic Logo -->
+        <div class="brand-logo-wrapper">
+          <a href="#hero" class="nav-brand" aria-label="Max Pratt Homepage">
+            <span class="letter-logo">M</span>
+            <span class="letter-logo">a</span>
+            <span class="letter-logo">x</span>
+            <span class="letter-logo space">P</span>
+            <span class="letter-logo">r</span>
+            <span class="letter-logo">a</span>
+            <span class="letter-logo">t</span>
+            <span class="letter-logo">t</span>
+          </a>
+          <div class="nav-location">
+            Lisbon, Portugal
+          </div>
+        </div>
+
+        <!-- Desktop Center Floating Navigation Menu -->
+        <nav class="menu-nav-center" aria-label="Main Navigation">
+          <div class="floating-pill-bar">
+            <a href="#hero" class="floating-pill is-active">Home</a>
+            <a href="#works" class="floating-pill">Case Studies</a>
+            <a href="#about" class="floating-pill">About</a>
+            <button type="button" class="floating-pill" id="openContactBtn">Contacts</button>
+          </div>
+        </nav>
+
+        <!-- Right: Social Links -->
+        <div class="nav-right-stack">
+          <span class="social-nav-label">Social:</span>
+          <div class="nav-social-links">
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-chip">BE</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip">IN</a>
+          </div>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="menu-button" id="mobileMenuBtn" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <div class="hamburger-icon">
+            <span class="hamburger-bar bar-1"></span>
+            <span class="hamburger-bar bar-2"></span>
+          </div>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <div class="mobile-drawer-meta">
+        <div class="caption-mono">NAVIGATION &mdash; 01 / 04</div>
+        <div class="nav-location">Lisbon &bull; <span id="mobileLisbonTime">14:48 GMT+1</span></div>
+      </div>
+      <nav class="mobile-menu-links">
+        <a href="#hero" class="mobile-nav-link" data-index="01">
+          <span class="num">01</span>
+          <span class="text">Home</span>
+        </a>
+        <a href="#works" class="mobile-nav-link" data-index="02">
+          <span class="num">02</span>
+          <span class="text">Case Studies</span>
+        </a>
+        <a href="#about" class="mobile-nav-link" data-index="03">
+          <span class="num">03</span>
+          <span class="text">About & Practice</span>
+        </a>
+        <a href="#awards" class="mobile-nav-link" data-index="04">
+          <span class="num">04</span>
+          <span class="text">Recognition</span>
+        </a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <button type="button" class="btn-block-action" id="mobileContactTrigger">
+          <span>Start a Project &bull; Get in Touch</span>
+          <svg viewBox="0 0 12 13" fill="none" class="icon-arrow">
+            <path
+              d="M6.5 0.585938L11.7071 5.79304C12.0976 6.18357 12.0976 6.81673 11.7071 7.20726L6.5 12.4144L5.08579 11.0002L8.58579 7.50015H0V5.50015H8.58579L5.08579 2.00015L6.5 0.585938Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+        <div class="mobile-social-row">
+          <a href="https://behance.net" target="_blank" rel="noopener">Behance</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-wrapper">
+
+    <!-- HERO SECTION: Full-Width Asymmetrical Swiss Grid + Monumental Billboard Typography -->
+    <section class="section hero-section" id="hero">
+      <div class="site-container">
+        <div class="hero-grid">
+
+          <!-- Asymmetric Left Column: Split Top Bio & Bottom Date -->
+          <div class="hero-meta-col reveal-item">
+            <div class="hero-meta-content">
+              <p class="meta-bio-text">
+                Over 16 awards and mentions from renowned industry players like Awwwards, FWA, and CSSDA. I can't wait
+                to see what the future holds as I continue to innovate and create.
+              </p>
+              <div class="meta-bottom-date">
+                <span class="date-label">Last updated</span>
+                <span class="date-val">06 - 03 - 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetric Billboard Column: Monumental Reduced-Weight Headline Aligned to Bottom -->
+          <div class="hero-billboard-col reveal-item" data-delay="100">
+            <h1 class="billboard-heading" style="font-weight: 300;">
+              Digital Designer and<br />Art Director currently<br />based in Lisbon
+            </h1>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER BAR & PORTFOLIO SHOWCASE: 70-80% Visual Hierarchy -->
+    <section class="section portfolio-section" id="works">
+      <div class="site-container">
+
+        <!-- Category Filter & Index Bar -->
+        <div class="portfolio-header-bar reveal-item">
+          <div class="filter-headline-col">
+            <span class="section-kicker">SELECTED COMMISSIONS</span>
+            <h2 class="sub-headline">Peek into my latest design &amp; art direction projects</h2>
+          </div>
+          <div class="category-filter-nav" role="tablist" aria-label="Project Filter">
+            <button type="button" class="filter-pill is-active" data-filter="all" role="tab" aria-selected="true">All
+              Works (05)</button>
+            <button type="button" class="filter-pill" data-filter="art-direction" role="tab" aria-selected="false">Art
+              Direction</button>
+            <button type="button" class="filter-pill" data-filter="web-design" role="tab" aria-selected="false">Web
+              Design</button>
+            <button type="button" class="filter-pill" data-filter="concept" role="tab"
+              aria-selected="false">Concept</button>
+          </div>
+        </div>
+
+        <!-- Project Grid: Massive Image-Led Storytelling -->
+        <div class="project-grid" id="projectGrid">
+
+          <!-- Project 01: MoneyMaven -->
+          <!-- Project 01: MoneyMaven (Full Width) -->
+          <article class="project-item full-width reveal-item" data-category="concept web-design"
+            data-project-id="moneymaven">
+            <div class="project-card-link cursor-hover" tabindex="0" role="button"
+              aria-label="View MoneyMaven project details">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ca23c5bce3fa2175427_hugol-halpingston-4OyLq2yN9u0-unsplash.jpg"
+                  alt="MoneyMaven project cover" class="project-image" loading="lazy" />
+                <div class="project-top-info-wrapper">
+                  <div class="project-pill title-pill">MoneyMaven</div>
+                  <div class="project-meta-pills">
+                    <span class="project-pill">Chicago</span>
+                    <span class="project-pill">2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: PayBolt (2-Column Left) -->
+          <article class="project-item half-width reveal-item" data-category="web-design art-direction"
+            data-project-id="paybolt">
+            <div class="project-card-link cursor-hover" tabindex="0" role="button"
+              aria-label="View PayBolt project details">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8c6acfaefc4fc5148e3a_pawel-czerwinski-W_mfoOi1Elc-unsplash.jpg"
+                  alt="PayBolt project cover" class="project-image" loading="lazy" />
+                <div class="project-top-info-wrapper">
+                  <div class="project-pill title-pill">PayBolt</div>
+                  <div class="project-meta-pills">
+                    <span class="project-pill">Chicago</span>
+                    <span class="project-pill">2020</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: FundMate (2-Column Right) -->
+          <article class="project-item half-width reveal-item" data-category="concept" data-project-id="fundmate">
+            <div class="project-card-link cursor-hover" tabindex="0" role="button"
+              aria-label="View FundMate project details">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8c21d144fa4d51d578cb_taqqy-rb-iP07KEWonDg-unsplash.jpg"
+                  alt="FundMate project cover" class="project-image" loading="lazy" />
+                <div class="project-top-info-wrapper">
+                  <div class="project-pill title-pill">FundMate</div>
+                  <div class="project-meta-pills">
+                    <span class="project-pill">Chicago</span>
+                    <span class="project-pill">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: WealthWave (Full Width) -->
+          <article class="project-item full-width reveal-item" data-category="art-direction"
+            data-project-id="wealthwave">
+            <div class="project-card-link cursor-hover" tabindex="0" role="button"
+              aria-label="View WealthWave project details">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg"
+                  alt="WealthWave project cover" class="project-image" loading="lazy" />
+                <div class="project-top-info-wrapper">
+                  <div class="project-pill title-pill">WealthWave</div>
+                  <div class="project-meta-pills">
+                    <span class="project-pill">Austin</span>
+                    <span class="project-pill">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 05: Infuse (Full Width) -->
+          <article class="project-item full-width reveal-item" data-category="web-design" data-project-id="infuse">
+            <div class="project-card-link cursor-hover" tabindex="0" role="button"
+              aria-label="View Infuse project details">
+              <div class="project-visual-wrapper">
+                <img
+                  src="https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640b894e43138c1b4c26a848_pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg"
+                  alt="Infuse project cover" class="project-image" loading="lazy" />
+                <div class="project-top-info-wrapper">
+                  <div class="project-pill title-pill">Infuse</div>
+                  <div class="project-meta-pills">
+                    <span class="project-pill">New York</span>
+                    <span class="project-pill">2022</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- All Works Footer Action -->
+        <div class="portfolio-action-row reveal-item">
+          <button type="button" class="btn-editorial stroke" id="showAllProjectsBtn">
+            <span class="link-text-wrapper">
+              <span class="link-floating-text" data-text="Explore Full Archive (18+ Works)">Explore Full Archive (18+
+                Works)</span>
+            </span>
+            <span class="btn-arrow-icon">&rarr;</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDITORIAL BIOGRAPHY & CLIENT ROSTER -->
+    <section class="section bio-section" id="about">
+      <div class="site-container">
+        <div class="bio-grid">
+
+          <!-- Left Column: Client Roster & Hard Skills -->
+          <aside class="bio-sidebar-col reveal-item">
+
+            <div class="bio-widget">
+              <span class="widget-label">SOME OF THE CLIENTS:</span>
+              <ul class="client-list">
+                <li><span class="client-name">Interface Inc.</span><span class="client-scope">US / Global</span></li>
+                <li><span class="client-name">FLOR Design</span><span class="client-scope">Chicago</span></li>
+                <li><span class="client-name">Rag &amp; Bone</span><span class="client-scope">New York</span></li>
+                <li><span class="client-name">Palacio de Hierro</span><span class="client-scope">Mexico City</span></li>
+                <li><span class="client-name">Pluto Studio</span><span class="client-scope">London</span></li>
+                <li><span class="client-name">Acne Studios</span><span class="client-scope">Stockholm</span></li>
+              </ul>
+            </div>
+
+            <div class="bio-widget">
+              <span class="widget-label">CORE DISCIPLINES:</span>
+              <div class="skills-tag-cloud">
+                <span class="discipline-tag">Art Direction</span>
+                <span class="discipline-tag">Digital Design</span>
+                <span class="discipline-tag">Creative Direction</span>
+                <span class="discipline-tag">UI/UX Strategy</span>
+                <span class="discipline-tag">Webflow &amp; Front-end</span>
+                <span class="discipline-tag">Interactive 3D</span>
+                <span class="discipline-tag">Design Systems</span>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- Right Column: Massive Statement + Philosophy -->
+          <div class="bio-statement-col reveal-item" data-delay="100">
+            <h2 class="statement-headline">
+              Studied Digital Design at <span class="text-underline-highlight">Kyiv Projector</span> Institute. And have
+              been shaping digital experiences for over a decade.
+            </h2>
+
+            <div class="bio-narrative-split">
+              <p class="paragraph-lead">
+                My passion for design started young, evolving across commercial collaborations with innovative startups,
+                global cultural institutions, and tier-one luxury entities. I believe design is not merely decoration—it
+                is structural storytelling that commands attention and solves core human friction.
+              </p>
+              <p class="paragraph-sub">
+                As a Senior UI Designer and Art Director, my focus is on crafting uncompromising, tactile digital
+                identities that merge strict Swiss typographic discipline with radical digital fluidity.
+              </p>
+            </div>
+
+            <div class="bio-signature-row">
+              <button type="button" class="btn-editorial solid" id="aboutModalTrigger">
+                <span class="link-text-wrapper">
+                  <span class="link-floating-text" data-text="Read Full Practice & CV">Read Full Practice &amp;
+                    CV</span>
+                </span>
+                <span class="btn-arrow-icon">&nearr;</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL-WIDTH PANORAMIC VISUAL BREAK -->
+    <section class="section full-bleed-visual">
+      <div class="panoramic-container reveal-item">
+        <div class="panoramic-visual-wrapper">
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2400&auto=format&fit=crop"
+            alt="Brutalist architectural spatial composition with monumental concrete shadows" class="panoramic-image"
+            loading="lazy" />
+          <div class="panoramic-caption">
+            <div class="caption-item"><span>SPACE &bull; PROPORTION</span></div>
+            <div class="caption-item"><span>LISBON STUDIO RESIDENCY</span></div>
+            <div class="caption-item"><span>SERIES 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL AWARDS & RECOGNITION (SWISS INDEX TABLE) -->
+    <section class="section awards-section" id="awards">
+      <div class="site-container">
+        <div class="awards-grid">
+
+          <div class="awards-title-col reveal-item">
+            <h3 class="section-eyebrow">SELECTED ENGAGEMENTS</h3>
+            <p class="paragraph-small text-muted">
+              Designing digital experiences across healthcare, enterprise software, AI products, and e-commerce
+              platforms for organizations of varying scale.
+            </p>
+          </div>
+
+          <div class="awards-table-col reveal-item" data-delay="100">
+            <div class="swiss-table">
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">01</span>
+                  <span class="row-honor">WellAffi Healthcare Platform</span>
+                </div>
+                <div class="row-cell-meta">Healthcare Ecosystem Design</div>
+                <div class="row-cell-year">2026</div>
+              </div>
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">02</span>
+                  <span class="row-honor">HealthChecks360 Redesign</span>
+                </div>
+                <div class="row-cell-meta">Health Screening Experience</div>
+                <div class="row-cell-year">2026</div>
+              </div>
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">03</span>
+                  <span class="row-honor">B2B2C Progressive Web App</span>
+                </div>
+                <div class="row-cell-meta">Product Strategy & UX Design</div>
+                <div class="row-cell-year">2025</div>
+              </div>
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">04</span>
+                  <span class="row-honor">CultSport Commerce Experience</span>
+                </div>
+                <div class="row-cell-meta">Cross-Sell & Engagement Design</div>
+                <div class="row-cell-year">2025</div>
+              </div>
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">05</span>
+                  <span class="row-honor">AI Myth Corp Platform</span>
+                </div>
+                <div class="row-cell-meta">AI Product Interface Design</div>
+                <div class="row-cell-year">2024</div>
+              </div>
+
+              <div class="swiss-table-row">
+                <div class="row-cell-title">
+                  <span class="index-num">06</span>
+                  <span class="row-honor">Shopify & WordPress Solutions</span>
+                </div>
+                <div class="row-cell-meta">E-commerce & Brand Experiences</div>
+                <div class="row-cell-year">2023–2026</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LUXURY MONOCHROME FOOTER (EXACT MAX PRATT ALIGNMENT) -->
+  <footer class="footer" id="contacts">
+    <div class="site-container">
+
+      <!-- Top Row: 33% Metadata Left, Center Name, 33% Coordinates Right -->
+      <div class="footer-top-row reveal-item">
+        <div class="footer-top-col left">
+          <p class="footer-meta-text">Portfolio 2022 - 2023</p>
+        </div>
+        <div class="footer-top-col center">
+          <p class="footer-center-name">Max Pratt</p>
+        </div>
+        <div class="footer-top-col right">
+          <p class="footer-meta-text">13.0056'' N, 33.6660'' W</p>
+        </div>
+      </div>
+
+      <!-- Center Contact Callout: Single Huge "Get in touch" with smooth rolling animation -->
+      <div class="footer-contact-wrapper reveal-item">
+        <p class="footer-prompt-label">Have a nice project?</p>
+        <div class="spacer-20"></div>
+        <button type="button" class="contact-email-link" id="footerContactTrigger" aria-label="Open contact drawer">
+          <span class="link-roller-text" data-text="Get in touch">Get in touch</span>
+        </button>
+      </div>
+
+      <!-- Bottom Row: 33% Copyright, Center Pill Buttons, 33% Secondary Links -->
+      <div class="footer-bottom-grid reveal-item">
+
+        <!-- Left: Copyright -->
+        <div class="footer-bottom-col left">
+          <p class="footer-copyright-text">
+            &copy; All rights reserved. Template by <a href="https://webflow.com/templates/designers/vlad-sokur"
+              target="_blank" rel="noopener" class="footer-credit-link">Vlad Sokur</a><br />
+            Powered by <a href="https://webflow.com" target="_blank" rel="noopener"
+              class="footer-credit-link">Webflow</a>
+          </p>
+        </div>
+
+        <!-- Center: 2 Stroked Rounded Pill Buttons (Behance & LinkedIn) -->
+        <div class="footer-bottom-col center">
+          <div class="footer-social-pill-group">
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="footer-social-pill">
+              Behance
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-pill">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Utility Links -->
+        <div class="footer-bottom-col right">
+          <div class="footer-util-links">
+            <a href="#about" class="footer-nav-link">Terms of Use</a>
+            <a href="#about" class="footer-nav-link">Style Guide</a>
+            <a href="#about" class="footer-nav-link">License</a>
+            <a href="#about" class="footer-nav-link">Instructions</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SLIDE-OUT NATURAL LANGUAGE PROJECT INQUIRY DRAWER -->
+  <div class="contact-drawer-overlay" id="contactDrawerOverlay" aria-hidden="true">
+    <div class="contact-backdrop" id="contactBackdrop"></div>
+    <aside class="contact-drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+
+      <div class="contact-drawer-header">
+        <span class="drawer-eyebrow" id="drawerTitle">PROJECT PROPOSAL &bull; BRIEF INQUIRY</span>
+        <button type="button" class="drawer-close-btn" id="closeContactBtn" aria-label="Close contact drawer">
+          <svg viewBox="0 0 24 24" fill="none" class="icon-close">
+            <path d="M5 5L19.1421 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M19 5L4.85786 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="contact-drawer-body">
+        <form class="natural-language-form" id="naturalLanguageForm">
+
+          <div class="natural-form-flow">
+            <span class="form-prose">Hi, my name is</span>
+            <span class="input-underline-wrap">
+              <input type="text" id="clientName" name="clientName" placeholder="John Smith" required class="nl-input" />
+            </span>
+            <span class="form-prose">. You can reach me directly at</span>
+            <span class="input-underline-wrap">
+              <input type="email" id="clientEmail" name="clientEmail" placeholder="john@domain.com" required
+                class="nl-input" />
+            </span>
+            <span class="form-prose">. I am seeking creative collaboration for a</span>
+            <span class="input-underline-wrap">
+              <input type="text" id="projectType" name="projectType"
+                placeholder="digital identity, website, art direction" required class="nl-input" />
+            </span>
+            <span class="form-prose">. Our estimated budget is $</span>
+            <span class="input-underline-wrap short">
+              <input type="text" id="projectBudget" name="projectBudget" placeholder="15,000" required
+                class="nl-input" />
+            </span>
+            <span class="form-prose">and our target delivery date is</span>
+            <span class="input-underline-wrap">
+              <input type="text" id="projectDeadline" name="projectDeadline" placeholder="November 2026" required
+                class="nl-input" />
+            </span>
+            <span class="form-prose">.</span>
+          </div>
+
+          <div class="form-action-row">
+            <button type="submit" class="btn-submit-luxury" id="submitFormBtn">
+              <span class="link-text-wrapper">
+                <span class="link-floating-text" data-text="Transmit Brief &rarr;">Transmit Brief &rarr;</span>
+              </span>
+            </button>
+            <div class="form-status-msg" id="formStatusMsg"></div>
+          </div>
+
+        </form>
+
+        <div class="drawer-direct-contact">
+          <span class="direct-label">DIRECT INQUIRIES &amp; AGENT:</span>
+          <a href="mailto:hello@maxpratt.studio" class="direct-email-link">hello@maxpratt.studio</a>
+          <p class="direct-note">Currently accepting select commissions for Q3/Q4 2026.</p>
+        </div>
+
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- DYNAMIC CASE STUDY DETAIL MODAL -->
+  <div class="case-modal-overlay" id="caseModalOverlay" aria-hidden="true">
+    <div class="case-backdrop" id="caseBackdrop"></div>
+    <div class="case-modal-container" role="dialog" aria-modal="true" aria-labelledby="caseModalTitle">
+
+      <div class="case-modal-topbar">
+        <div class="case-modal-badge" id="caseModalCategory">CASE STUDY &bull; ART DIRECTION</div>
+        <button type="button" class="case-close-btn" id="closeCaseBtn" aria-label="Close case study modal">
+          <span class="close-label">CLOSE</span>
+          <svg viewBox="0 0 24 24" fill="none" class="icon-close">
+            <path d="M5 5L19.1421 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M19 5L4.85786 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="case-modal-content" id="caseModalContent">
+        <!-- Content injected dynamically via app.js -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ABOUT & PRACTICE DETAIL MODAL -->
+  <div class="about-modal-overlay" id="aboutModalOverlay" aria-hidden="true">
+    <div class="about-backdrop" id="aboutBackdrop"></div>
+    <div class="about-modal-container" role="dialog" aria-modal="true">
+
+      <div class="case-modal-topbar">
+        <div class="case-modal-badge">STUDIO PRACTICE &bull; CURRICULUM VITAE</div>
+        <button type="button" class="case-close-btn" id="closeAboutBtn" aria-label="Close about modal">
+          <span class="close-label">CLOSE</span>
+          <svg viewBox="0 0 24 24" fill="none" class="icon-close">
+            <path d="M5 5L19.1421 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M19 5L4.85786 19.1421" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="about-modal-scroll">
+        <div class="about-modal-inner">
+          <h2 class="about-modal-heading">Passion for Design: From Startups to Global Institutions, The Journey So Far.
+          </h2>
+          <div class="about-split-bio">
+            <div class="about-text-column">
+              <p class="lead-p">
+                I hold a degree in Graphic Design from the Kyiv Projector Institute and have been practicing in the
+                digital design industry for over a decade. During this span, I have distilled a methodology rooted in
+                Swiss modernist typography, rigorous spatial tension, and uncompromising front-end execution.
+              </p>
+              <p>
+                My collaborations span disruptive technology founders, cultural foundations, and enterprise design
+                systems. Every project begins with strategic clarity: stripping away ornamental excess to reveal the
+                structural identity of the concept.
+              </p>
+              <div class="about-stats-grid">
+                <div class="stat-card">
+                  <span class="stat-number">10+</span>
+                  <span class="stat-desc">Years Industry Practice</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-number">16</span>
+                  <span class="stat-desc">International Honors &amp; Awards</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-number">40+</span>
+                  <span class="stat-desc">Global Brand Deployments</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-cv-column">
+              <div class="cv-block">
+                <h4 class="cv-category-title">EDUCATION &amp; TRAINING</h4>
+                <div class="cv-entry">
+                  <span class="cv-role">UX Design Mastercourse</span>
+                  <span class="cv-inst">Projector Online Institute (2021)</span>
+                </div>
+                <div class="cv-entry">
+                  <span class="cv-role">Visual Communications &amp; Systems</span>
+                  <span class="cv-inst">Design Line Workshop (2018)</span>
+                </div>
+                <div class="cv-entry">
+                  <span class="cv-role">Webflow Developer Certification</span>
+                  <span class="cv-inst">Webflow Academy (2020)</span>
+                </div>
+              </div>
+
+              <div class="cv-block">
+                <h4 class="cv-category-title">PRIMARY TOOLING</h4>
+                <div class="cv-entry">
+                  <span class="cv-role">Design &amp; Prototyping</span>
+                  <span class="cv-inst">Figma, Principle, ProtoPie, After Effects</span>
+                </div>
+                <div class="cv-entry">
+                  <span class="cv-role">3D &amp; Motion</span>
+                  <span class="cv-inst">Blender, Cinema 4D, Spline</span>
+                </div>
+                <div class="cv-entry">
+                  <span class="cv-role">Front-End Development</span>
+                  <span class="cv-inst">HTML5, CSS3/Modern Grid, Vanilla JS, Webflow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
