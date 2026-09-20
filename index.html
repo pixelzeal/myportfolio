@@ -211,7 +211,7 @@
           </article>
 
           <!-- Project 03: FundMate (2-Column Right) -->
-          <article class="project-item half-width reveal-item" data-category="concept" data-project-id="fundmate">
+          <article class="project-item half-width reveal-item" data-category="concept" data-project-id="jumeriahpeninsula">
             <div class="project-card-link cursor-hover" tabindex="0" role="button"
               aria-label="View FundMate project details">
               <div class="project-visual-wrapper">
@@ -711,6 +711,74 @@
             </div>
           </div>
         </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIGHTBOX / FULLSCREEN IMAGE MODAL -->
+  <div class="lightbox-overlay" id="lightboxOverlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-container">
+      
+      <!-- Top Bar: Counter & Actions -->
+      <div class="lightbox-topbar">
+        <div class="lightbox-counter" id="lightboxCounter">01 / 01</div>
+        <div class="lightbox-top-actions">
+          <div class="lightbox-zoom-controls">
+            <button type="button" class="lightbox-action-btn" id="lightboxZoomOutBtn" aria-label="Zoom Out" title="Zoom Out (-)">
+              <svg viewBox="0 0 24 24" fill="none" class="icon-lightbox">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M20 20l-4-4M8 11h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button type="button" class="lightbox-action-btn zoom-level-pill" id="lightboxZoomToggleBtn" aria-label="Toggle Zoom" title="Toggle Zoom (1x / 2x)">
+              <span class="zoom-level-text" id="lightboxZoomLevelText">100%</span>
+            </button>
+            <button type="button" class="lightbox-action-btn" id="lightboxZoomInBtn" aria-label="Zoom In" title="Zoom In (+)">
+              <svg viewBox="0 0 24 24" fill="none" class="icon-lightbox">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M20 20l-4-4M11 8v6M8 11h6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button type="button" class="lightbox-action-btn" id="lightboxZoomResetBtn" aria-label="Reset Zoom" title="Reset Zoom (0 / R)">
+              <svg viewBox="0 0 24 24" fill="none" class="icon-lightbox">
+                <path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 3v5h5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <button type="button" class="lightbox-action-btn" id="lightboxFullscreenBtn" aria-label="Toggle Fullscreen" title="Toggle Fullscreen (F)">
+            <svg viewBox="0 0 24 24" fill="none" class="icon-lightbox">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="lightbox-action-btn" id="lightboxCloseBtn" aria-label="Close Lightbox" title="Close Lightbox (Esc)">
+            <svg viewBox="0 0 24 24" fill="none" class="icon-lightbox">
+              <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Stage with Image & Prev/Next Arrows -->
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav-btn prev" id="lightboxPrevBtn" aria-label="Previous image (Left Arrow)">
+          <svg viewBox="0 0 24 24" fill="none" class="icon-arrow"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="lightbox-image-wrapper" id="lightboxImageWrapper">
+          <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        </div>
+
+        <button type="button" class="lightbox-nav-btn next" id="lightboxNextBtn" aria-label="Next image (Right Arrow)">
+          <svg viewBox="0 0 24 24" fill="none" class="icon-arrow"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <!-- Bottom Caption Bar -->
+      <div class="lightbox-bottombar">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
       </div>
 
     </div>
