@@ -1827,12 +1827,16 @@ ul, ol {
   outline: none;
 }
 
+.split-video-wrapper {
+  background: var(--split-video-bg, #d7e6ed);
+}
+
 .split-video-element {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
-  background: #08080a;
+  background: transparent;
   pointer-events: none;
 }
 

@@ -339,27 +339,28 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         type: 'video',
         src: 'images/vd-onboarding-new.mp4',
-        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        poster: 'images/vd-video-poster.jpg',
         caption: 'Resident vs Visitor Personalized Onboarding',
         badge: 'ONBOARDING'
       },
       {
         type: 'video',
         src: 'images/vd-home-experience.mp4',
-        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        poster: 'images/vd-video-poster.jpg',
         caption: 'Useful Helpers & Quick Actions Dashboard',
         badge: 'HOME EXPERIENCE'
       },
       {
         type: 'video',
         src: 'images/vd-chatbot.mp4',
-        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        poster: 'images/vd-video-poster-chat.jpg',
         caption: 'AI Travel Assistant & Conversational Support',
         badge: 'CHATBOT'
       },
       {
-        type: 'image',
-        image: 'images/visit-dubai-feature-04.jpg',
+        type: 'video',
+        src: 'images/vd-more.mp4',
+        poster: 'images/vd-video-poster-more.jpg',
         caption: 'Travel Services & Utility Hub',
         badge: 'MORE MENU'
       },
@@ -370,20 +371,23 @@ document.addEventListener('DOMContentLoaded', () => {
         badge: 'TRAVEL SERVICES'
       },
       {
-        type: 'image',
-        image: 'images/visit-dubai-feature-06.jpg',
+        type: 'video',
+        src: 'images/vd-invite-split-bill.mp4',
+        poster: 'images/vd-video-poster-social-travel.jpg',        
         caption: 'Group Trip Planning & Cost Splitting',
         badge: 'SOCIAL TRAVEL'
       },
       {
-        type: 'image',
-        image: 'images/visit-dubai-feature-07.jpg',
+        type: 'video',
+        src: 'images/vd-wayfinder.mp4',
+        poster: 'images/vd-video-poster-location-discovery.jpg',
         caption: 'Wayfinder AR Navigation Experience',
         badge: 'LOCATION DISCOVERY'
       },
       {
-        type: 'image',
-        image: 'images/visit-dubai-feature-08.jpg',
+        type: 'video',
+        src: 'images/vd-welcome-pack.mp4',
+        poster: 'images/vd-video-poster-welcome-pack.jpg',
         caption: 'Welcome Pack for First-Time Visitors',
         badge: 'CULTURAL GUIDE'
       },
@@ -412,14 +416,6 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       image: 'images/visit-dubai-carousel-01.jpg',
       caption: 'Personalized Travel Onboarding Experience'
-    },
-    {
-      image: 'images/visit-dubai-carousel-02.jpg',
-      caption: 'AI Travel Assistant & Destination Support'
-    },
-    {
-      image: 'images/visit-dubai-carousel-03.jpg',
-      caption: 'Smart Travel Utilities & Services Hub'
     }
   ],
 
@@ -919,7 +915,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${mediaList.map((item, idx) => `
                   <div class="split-media-card" data-split-index="${idx}">
                     ${item.type === 'video' ? `
-                      <div class="split-video-wrapper" data-split-index="${idx}">
+                      <div class="split-video-wrapper" data-split-index="${idx}" style="${item.bgColor || item.bg || data.splitFeature.videoBg ? `--split-video-bg: ${item.bgColor || item.bg || data.splitFeature.videoBg}; background-color: ${item.bgColor || item.bg || data.splitFeature.videoBg};` : ''}">
                         <video class="split-video-element" src="${item.src}" poster="${item.poster || ''}" playsinline loop muted preload="metadata" draggable="false"></video>
                         <div class="split-media-badge">${item.badge || 'VIDEO'}</div>
                         <button type="button" class="video-play-glass-btn" aria-label="Play video" title="Play / Pause Video">
