@@ -306,76 +306,181 @@ document.addEventListener('DOMContentLoaded', () => {
       prevId: 'dubaiharbour',
       nextId: 'wealthwave'
     },
-    wealthwave: {
-      title: 'WealthWave',
-      category: 'Art Direction &bull; Venture Studio Branding',
-      client: 'WealthWave Labs',
-      year: '2023',
-      discipline: 'Art Direction & Branding',
-      scope: 'Brand Architecture, Generative Kinetic Type, Spatial Exhibition',
-      location: 'Austin, USA',
-      description: 'A comprehensive brand identity and digital platform for an emerging frontier tech venture studio. Rooted in generative typography that morphs with real-time portfolio activity.',
-      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg',
-      editorialSplit: {
-        col1Heading: '01 / Frontier Branding',
-        col1Text: 'WealthWave incubates companies at the intersection of AI, robotics, and clean energy. The brand identity needed to communicate radical experimentation grounded in institutional gravitas.',
-        col2Heading: '02 / Kinetic Typography',
-        col2Text: 'We created custom variable letterforms that react to sound, user velocity, and live funding milestones, turning the brand into an ever-evolving digital organism.'
+'visit-dubai': {
+  title: 'Visit Dubai',
+  category: 'Travel Experience &bull; Mobile App Innovation',
+  client: 'Dubai Department of Economy & Tourism',
+  year: '2024',
+  discipline: 'Product Strategy & UX/UI Design',
+  scope: 'Feature Ideation, User Experience Design, Mobile App Design, Prototyping',
+  location: 'Dubai, U.A.E.',
+  description: 'A concept proposal developed as part of a strategic product pitch for the Visit Dubai mobile application. The objective was to enhance visitor onboarding, simplify travel planning, improve destination discovery, and create a more personalized experience through intelligent assistance, contextual services, and social travel features.',
+  heroImage: 'images/visit-dubai-hero.jpg',
+
+  editorialSplit: {
+    col1Heading: '01 / Personalized Visitor Journeys',
+    col1Text: 'The proposal introduced a tailored onboarding experience that identifies whether users are residents or visitors. This simple distinction enables the app to surface more relevant content, services, events, and recommendations based on individual needs and travel intent.',
+    col2Heading: '02 / The Digital Travel Companion',
+    col2Text: 'Modern travelers expect immediate answers and seamless access to services. The concept reimagined Visit Dubai as a proactive travel companion capable of assisting users before arrival, during their stay, and throughout their exploration of the city.'
+  },
+
+  splitFeature: {
+    image: 'images/visit-dubai-feature.jpg',
+    eyebrow: 'SMARTER TRAVEL EXPERIENCES',
+    quote: 'Helping visitors discover, navigate, and experience Dubai with confidence.',
+    text: 'The proposed experience combines AI-powered assistance, travel utilities, social trip planning, location-based discovery, and immersive engagement features to create a unified destination companion for every traveler.',
+    metrics: [
+      { label: 'User Types', value: '2' },
+      { label: 'Feature Concepts', value: '10+' },
+      { label: 'Experience', value: 'Mobile First' }
+    ],
+
+    media: [
+      {
+        type: 'video',
+        src: 'images/vd-onboarding-new.mp4',
+        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        caption: 'Resident vs Visitor Personalized Onboarding',
+        badge: 'ONBOARDING'
       },
-      splitFeature: {
-        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-        eyebrow: 'GENERATIVE IDENTITY',
-        quote: 'Typography that breathes and shifts with real-time studio momentum.',
-        text: 'A design language built from code, celebrating the bold ambition of founders building next-generation industrial technology.',
-        metrics: [
-          { label: 'Ventures', value: '18 Active' },
-          { label: 'Variable Axes', value: '4' },
-          { label: 'Recognition', value: 'AIGA Winner' }
-        ],
-        media: [
-          {
-            type: 'video',
-            src: 'images/jp-video.mp4',
-            poster: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-            caption: 'Generative Typography System — Kinetic Motion Simulation',
-            badge: 'KINETIC SIMULATION'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-            caption: 'Studio Exhibition Poster Architecture',
-            badge: 'PRINT ARCHIVE'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg',
-            caption: 'Variable Type Kinetic Specimen Canvas',
-            badge: 'HIGH-RES CAPTURE'
-          }
-        ]
+      {
+        type: 'video',
+        src: 'images/vd-home-experience.mp4',
+        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        caption: 'Useful Helpers & Quick Actions Dashboard',
+        badge: 'HOME EXPERIENCE'
       },
-      carousel: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg', caption: 'Generative Typography System in Motion' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Studio Exhibition Poster Grid' }
-      ],
-      deliverablesList: [
-        { num: '01', title: 'Generative Variable Typeface', desc: 'Custom kinetic font family responsive to digital environment inputs.' },
-        { num: '02', title: 'Spatial Digital Showcase', desc: 'Widescreen interactive platform showcasing incubated venture achievements.' },
-        { num: '03', title: 'Editorial Print & Exhibition Collateral', desc: 'Heavyweight archival print materials for annual partner summits.' },
-        { num: '04', title: 'Brand Guidelines System & Design Tokens', desc: 'Cross-platform vector assets and variable layout rules.' }
-      ],
-      galleryHeading: 'Kinetic typography & spatial identity',
-      galleryDescription: 'The spatial showcase documents WealthWave’s generative variable type specimens, physical architectural signage, partner summit print collateral, and interactive digital design token libraries.',
-      galleryAsymmetric: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Brand Guidelines & Kinetic Font Architecture' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Digital Spatial Experience Exhibition' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg', caption: 'Variable Type Kinetic Motion Canvas' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Architectural Exhibition Poster Matrix' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg', caption: 'Design System & Cross-Platform Tokens' }
-      ],
-      prevId: 'jumeriahpeninsula',
-      nextId: 'infuse'
+      {
+        type: 'video',
+        src: 'images/vd-chatbot.mp4',
+        poster: 'images/jumeriah-peninsula-feature-01.jpg',
+        caption: 'AI Travel Assistant & Conversational Support',
+        badge: 'CHATBOT'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-04.jpg',
+        caption: 'Travel Services & Utility Hub',
+        badge: 'MORE MENU'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-05.jpg',
+        caption: 'Get Started Journey & Travel Essentials',
+        badge: 'TRAVEL SERVICES'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-06.jpg',
+        caption: 'Group Trip Planning & Cost Splitting',
+        badge: 'SOCIAL TRAVEL'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-07.jpg',
+        caption: 'Wayfinder AR Navigation Experience',
+        badge: 'LOCATION DISCOVERY'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-08.jpg',
+        caption: 'Welcome Pack for First-Time Visitors',
+        badge: 'CULTURAL GUIDE'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-09.jpg',
+        caption: 'Festival Notifications & Event Discovery',
+        badge: 'SMART ALERTS'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-10.jpg',
+        caption: 'Dubai Frame Photo Filter Experience',
+        badge: 'ENGAGEMENT'
+      },
+      {
+        type: 'image',
+        image: 'images/visit-dubai-feature-11.jpg',
+        caption: 'VR Ticket Hunt & Landmark Rewards',
+        badge: 'GAMIFICATION'
+      }
+    ]
+  },
+
+  carousel: [
+    {
+      image: 'images/visit-dubai-carousel-01.jpg',
+      caption: 'Personalized Travel Onboarding Experience'
     },
+    {
+      image: 'images/visit-dubai-carousel-02.jpg',
+      caption: 'AI Travel Assistant & Destination Support'
+    },
+    {
+      image: 'images/visit-dubai-carousel-03.jpg',
+      caption: 'Smart Travel Utilities & Services Hub'
+    }
+  ],
+
+  deliverablesList: [
+    {
+      num: '01',
+      title: 'Personalized User Onboarding',
+      desc: 'Introduced resident and visitor journeys to deliver contextually relevant content and recommendations.'
+    },
+    {
+      num: '02',
+      title: 'AI-Powered Travel Assistant',
+      desc: 'Designed a conversational experience capable of answering travel questions and surfacing essential services.'
+    },
+    {
+      num: '03',
+      title: 'Travel Services Ecosystem',
+      desc: 'Unified visa assistance, eSIM activation, bookings, transportation, currency conversion, and emergency support.'
+    },
+    {
+      num: '04',
+      title: 'Collaborative Trip Planning',
+      desc: 'Enabled travelers to invite companions, manage itineraries, and split trip expenses seamlessly.'
+    },
+    {
+      num: '05',
+      title: 'AR & Gamified Discovery Features',
+      desc: 'Proposed immersive experiences including Wayfinder navigation, Dubai Frame filters, and landmark reward hunts.'
+    }
+  ],
+
+  galleryHeading: 'Reimagining the visitor experience',
+
+  galleryDescription: 'The concept explored how Visit Dubai could evolve from a destination guide into a comprehensive travel companion. By combining personalized onboarding, AI assistance, practical travel utilities, social planning tools, and immersive discovery experiences, the proposal aimed to support visitors throughout every stage of their journey.',
+
+  galleryAsymmetric: [
+    {
+      image: 'images/visit-dubai-gallery-01.jpg',
+      caption: 'Resident & Visitor Experience Selection'
+    },
+    {
+      image: 'images/visit-dubai-gallery-02.jpg',
+      caption: 'AI Travel Assistant Conversations'
+    },
+    {
+      image: 'images/visit-dubai-gallery-03.jpg',
+      caption: 'Travel Services & Utility Hub'
+    },
+    {
+      image: 'images/visit-dubai-gallery-04.jpg',
+      caption: 'Group Trip Planning & Expense Sharing'
+    },
+    {
+      image: 'images/visit-dubai-gallery-05.jpg',
+      caption: 'Wayfinder & Interactive Discovery Features'
+    }
+  ],
+
+  prevId: 'jumeriahpeninsula',
+  nextId: 'wellafi'
+},
     infuse: {
       title: 'Infuse',
       category: 'Web Design &bull; Spatial Audio Showcase',
@@ -825,6 +930,11 @@ document.addEventListener('DOMContentLoaded', () => {
                           <svg viewBox="0 0 24 24" fill="none" class="icon-sound-toggle icon-muted"><path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                           <svg viewBox="0 0 24 24" fill="none" class="icon-sound-toggle icon-unmuted"><path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.08" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         </button>
+                        <button type="button" class="gallery-card-expand-btn video-zoom-trigger" data-split-index="${idx}" aria-label="Zoom video in Lightbox" title="Zoom Video in Lightbox (F)">
+                          <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
                         <div class="split-media-glass-overlay"></div>
                       </div>
                     ` : `
@@ -911,16 +1021,24 @@ document.addEventListener('DOMContentLoaded', () => {
           
           <div class="carousel-viewport${!hasMultiple ? ' no-drag' : ''}" id="carouselViewport">
             <div class="carousel-track" id="carouselTrack">
-              ${data.carousel.map((item, idx) => `
-                <div class="carousel-slide carousel-lightbox-trigger" data-carousel-index="${idx}" role="button" tabindex="0" aria-label="Enlarge image ${idx + 1}: ${item.caption || ''}">
-                  <img src="${item.image}" alt="${item.caption || ''}" loading="lazy" draggable="false" />
+              ${data.carousel.map((item, idx) => {
+                const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
+                return `
+                <div class="carousel-slide carousel-lightbox-trigger ${isVideo ? 'carousel-video-slide' : ''}" data-carousel-index="${idx}" role="button" tabindex="0" aria-label="Enlarge media ${idx + 1}: ${item.caption || ''}">
+                  ${isVideo ? `
+                    <video class="split-video-element" src="${item.src || item.video || item.image}" poster="${item.poster || ''}" playsinline loop muted preload="metadata" draggable="false"></video>
+                    <div class="split-media-badge">${item.badge || 'VIDEO'}</div>
+                  ` : `
+                    <img src="${item.image || item.src}" alt="${item.caption || ''}" loading="lazy" draggable="false" />
+                  `}
                   <div class="carousel-expand-badge" aria-hidden="true">
                     <svg viewBox="0 0 24 24" fill="none" class="icon-carousel-expand">
                       <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                   </div>
                 </div>
-              `).join('')}
+                `;
+              }).join('')}
             </div>
           </div>
 
@@ -966,11 +1084,18 @@ document.addEventListener('DOMContentLoaded', () => {
           <!-- Horizontal Rail Viewport -->
           <div class="case-gallery-rail-viewport" id="galleryRailViewport" tabindex="0" role="region" aria-label="Horizontal image gallery rail">
             <div class="case-gallery-rail" id="galleryRail">
-              ${data.galleryAsymmetric.map((item, idx) => `
+              ${data.galleryAsymmetric.map((item, idx) => {
+                const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
+                return `
                 <div class="case-gallery-card" data-gallery-index="${idx}">
-                  <div class="gallery-card-inner gallery-lightbox-trigger" data-gallery-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption} in Lightbox">
-                    <img src="${item.image}" alt="${item.caption}" loading="lazy" draggable="false" />
-                    <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen in lightbox" title="View Fullscreen (F)">
+                  <div class="gallery-card-inner gallery-lightbox-trigger ${isVideo ? 'gallery-video-card' : ''}" data-gallery-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'gallery visual'} in Lightbox">
+                    ${isVideo ? `
+                      <video class="gallery-video-element" src="${item.src || item.video || item.image}" poster="${item.poster || ''}" playsinline loop muted preload="metadata" draggable="false"></video>
+                      <div class="split-media-badge">${item.badge || 'VIDEO'}</div>
+                    ` : `
+                      <img src="${item.image || item.src}" alt="${item.caption || ''}" loading="lazy" draggable="false" />
+                    `}
+                    <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen in lightbox" title="Zoom in Lightbox (F)">
                       <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
                         <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -978,7 +1103,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="gallery-card-glass-overlay"></div>
                   </div>
                 </div>
-              `).join('')}
+                `;
+              }).join('')}
             </div>
           </div>
 
@@ -1199,7 +1325,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           vWrap.addEventListener('click', (e) => {
-            if (e.target.closest('.video-play-glass-btn') || e.target.closest('.video-sound-glass-btn')) return;
+            if (e.target.closest('.video-play-glass-btn') || e.target.closest('.video-sound-glass-btn') || e.target.closest('.gallery-card-expand-btn')) return;
             toggleVideoPlay();
           });
 
@@ -1208,27 +1334,28 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         });
 
-        // Lightbox trigger for image items in split media
-        const imageTriggers = splitViewport.querySelectorAll('.split-lightbox-trigger');
-        const splitImages = mediaItems.filter(m => m.type === 'image' || !m.type).map(m => ({
-          image: m.image || m.src,
-          caption: m.caption
-        }));
+        // Lightbox trigger for all items (videos and images) in split media
+        const splitMediaCards = splitViewport.querySelectorAll('.split-media-card');
+        splitMediaCards.forEach((card) => {
+          const splitIdx = parseInt(card.getAttribute('data-split-index'), 10);
+          const expandBtn = card.querySelector('.gallery-card-expand-btn');
+          const imgTrigger = card.querySelector('.split-lightbox-trigger');
 
-        imageTriggers.forEach((trigger) => {
-          trigger.addEventListener('click', (e) => {
+          function triggerSplitLightbox(e) {
             if (splitHasDragged) {
               splitHasDragged = false;
               return;
             }
             e.stopPropagation();
-            const splitIdx = parseInt(trigger.getAttribute('data-split-index'), 10);
-            const clickedMedia = mediaItems[splitIdx];
-            const targetImgSrc = clickedMedia ? (clickedMedia.image || clickedMedia.src) : '';
-            let lightboxInitialIdx = splitImages.findIndex(img => img.image === targetImgSrc);
-            if (lightboxInitialIdx === -1) lightboxInitialIdx = 0;
-            openLightbox(splitImages.length > 0 ? splitImages : [{ image: targetImgSrc, caption: clickedMedia?.caption || '' }], lightboxInitialIdx);
-          });
+            openLightbox(mediaItems, splitIdx);
+          }
+
+          if (expandBtn) {
+            expandBtn.addEventListener('click', triggerSplitLightbox);
+          }
+          if (imgTrigger) {
+            imgTrigger.addEventListener('click', triggerSplitLightbox);
+          }
         });
       }
     }
@@ -1576,7 +1703,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeCaseBtn) closeCaseBtn.addEventListener('click', closeCaseStudy);
   if (caseBackdrop) caseBackdrop.addEventListener('click', closeCaseStudy);
 
-  // --- 8. Lightbox / Fullscreen Image Viewer with Precision Zoom Controller ---
+  // --- 8. Lightbox / Fullscreen Image & Video Viewer with Precision Zoom Controller ---
   const lightboxOverlay = document.getElementById('lightboxOverlay');
   const lightboxBackdrop = document.getElementById('lightboxBackdrop');
   const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
@@ -1589,6 +1716,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxPrevBtn = document.getElementById('lightboxPrevBtn');
   const lightboxNextBtn = document.getElementById('lightboxNextBtn');
   const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxVideo = document.getElementById('lightboxVideo');
   const lightboxCaption = document.getElementById('lightboxCaption');
   const lightboxCounter = document.getElementById('lightboxCounter');
   const lightboxImageWrapper = document.getElementById('lightboxImageWrapper');
@@ -1607,26 +1735,37 @@ document.addEventListener('DOMContentLoaded', () => {
   let panStartOffsetY = 0;
   let hasPanned = false;
 
+  function getActiveMediaElement() {
+    if (activeLightboxImages && activeLightboxImages[activeLightboxIndex]) {
+      const cur = activeLightboxImages[activeLightboxIndex];
+      const isVideo = cur.type === 'video' || (cur.src && cur.src.endsWith('.mp4')) || (cur.image && cur.image.endsWith('.mp4'));
+      if (isVideo && lightboxVideo) return lightboxVideo;
+    }
+    return lightboxImg;
+  }
+
   function updateZoomTransform(animate = true) {
-    if (!lightboxImg) return;
+    const activeEl = getActiveMediaElement();
+    if (!activeEl) return;
+
     if (animate) {
-      lightboxImg.style.transition = 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)';
+      activeEl.style.transition = 'transform 0.25s cubic-bezier(0.16, 1, 0.3, 1)';
     } else {
-      lightboxImg.style.transition = 'none';
+      activeEl.style.transition = 'none';
     }
 
     if (currentZoom <= 1.0) {
       currentZoom = 1.0;
       panX = 0;
       panY = 0;
-      lightboxImg.style.transform = `scale(1) translate3d(0px, 0px, 0px)`;
-      lightboxImg.classList.remove('is-zoomed');
+      activeEl.style.transform = `scale(1) translate3d(0px, 0px, 0px)`;
+      activeEl.classList.remove('is-zoomed');
       if (lightboxImageWrapper) {
         lightboxImageWrapper.classList.remove('is-zoomed');
       }
     } else {
-      lightboxImg.style.transform = `scale(${currentZoom}) translate3d(${panX / currentZoom}px, ${panY / currentZoom}px, 0px)`;
-      lightboxImg.classList.add('is-zoomed');
+      activeEl.style.transform = `scale(${currentZoom}) translate3d(${panX / currentZoom}px, ${panY / currentZoom}px, 0px)`;
+      activeEl.classList.add('is-zoomed');
       if (lightboxImageWrapper) {
         lightboxImageWrapper.classList.add('is-zoomed');
       }
@@ -1678,7 +1817,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Zoom on Image Double-Click & Wheel
+  // Zoom on Image & Video Double-Click & Wheel
   if (lightboxImageWrapper) {
     lightboxImageWrapper.addEventListener('wheel', (e) => {
       if (!lightboxOverlay || !lightboxOverlay.classList.contains('is-active')) return;
@@ -1760,23 +1899,56 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    if (lightboxImg) {
-      const imgSrc = currentItem.image || currentItem.src;
-      if (animate) {
-        lightboxImg.classList.add('is-transitioning');
-        setTimeout(() => {
+    const isVideo = currentItem.type === 'video' || (currentItem.src && currentItem.src.endsWith('.mp4')) || (currentItem.image && currentItem.image.endsWith('.mp4'));
+
+    if (isVideo) {
+      if (lightboxImg) {
+        lightboxImg.style.display = 'none';
+        lightboxImg.src = '';
+      }
+      if (lightboxVideo) {
+        lightboxVideo.style.display = 'block';
+        const videoSrc = currentItem.src || currentItem.video || currentItem.image;
+        if (lightboxVideo.src !== videoSrc) {
+          lightboxVideo.src = videoSrc;
+        }
+        if (currentItem.poster) {
+          lightboxVideo.poster = currentItem.poster;
+        }
+        if (animate) {
+          lightboxVideo.classList.add('is-transitioning');
+          setTimeout(() => {
+            lightboxVideo.classList.remove('is-transitioning');
+          }, 150);
+        }
+        lightboxVideo.currentTime = 0;
+        lightboxVideo.play().catch(() => {});
+      }
+    } else {
+      if (lightboxVideo) {
+        lightboxVideo.pause();
+        lightboxVideo.style.display = 'none';
+        lightboxVideo.src = '';
+      }
+      if (lightboxImg) {
+        lightboxImg.style.display = 'block';
+        const imgSrc = currentItem.image || currentItem.src;
+        if (animate) {
+          lightboxImg.classList.add('is-transitioning');
+          setTimeout(() => {
+            lightboxImg.src = imgSrc;
+            lightboxImg.alt = currentItem.caption || 'Expanded portfolio visual';
+            lightboxImg.onload = () => {
+              lightboxImg.classList.remove('is-transitioning');
+            };
+            setTimeout(() => {
+              lightboxImg.classList.remove('is-transitioning');
+            }, 120);
+          }, 150);
+        } else {
           lightboxImg.src = imgSrc;
           lightboxImg.alt = currentItem.caption || 'Expanded portfolio visual';
-          lightboxImg.onload = () => {
-            lightboxImg.classList.remove('is-transitioning');
-          };
-          setTimeout(() => {
-            lightboxImg.classList.remove('is-transitioning');
-          }, 120);
-        }, 150);
-      } else {
-        lightboxImg.src = imgSrc;
-        lightboxImg.alt = currentItem.caption || 'Expanded portfolio visual';
+        }
       }
     }
   }
@@ -1794,6 +1966,10 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxOverlay.classList.remove('is-active');
     lightboxOverlay.setAttribute('aria-hidden', 'true');
     resetZoom();
+    if (lightboxVideo) {
+      lightboxVideo.pause();
+      lightboxVideo.src = '';
+    }
     // Exit native fullscreen if active
     if (document.fullscreenElement) {
       if (document.exitFullscreen) {

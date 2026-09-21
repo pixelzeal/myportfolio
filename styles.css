@@ -1830,9 +1830,30 @@ ul, ol {
 .split-video-element {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: #08080a;
   pointer-events: none;
+}
+
+.gallery-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #08080a;
+  border-radius: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.split-video-wrapper .gallery-card-expand-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 5;
 }
 
 .split-image-wrapper img {
@@ -2929,7 +2950,8 @@ ul, ol {
   user-select: none;
 }
 
-.lightbox-img {
+.lightbox-img,
+.lightbox-video {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -2941,13 +2963,27 @@ ul, ol {
   transform-origin: center center;
   user-select: none;
   -webkit-user-select: none;
-  -webkit-user-drag: none;
   will-change: transform;
+  outline: none;
 }
 
-.lightbox-img.is-transitioning {
+.lightbox-img {
+  -webkit-user-drag: none;
+}
+
+.lightbox-video {
+  display: none;
+  background: #08080a;
+}
+
+.lightbox-img.is-transitioning,
+.lightbox-video.is-transitioning {
   opacity: 0;
   transform: scale(0.96);
+}
+
+.lightbox-video.is-zoomed {
+  cursor: grab;
 }
 
 .lightbox-bottombar {
