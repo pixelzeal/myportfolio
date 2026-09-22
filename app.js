@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       liveUrl: 'https://www.dubaiharbourresidences.com/',
       location: 'Dubai, UAE',
       description: 'Dubai Harbour Residences is a premium waterfront residential destination offering luxury coastal living in one of Dubai’s most sought-after locations. The digital experience was designed to showcase architectural excellence, marina-front lifestyle, and world-class amenities through immersive storytelling and conversion-focused user journeys.',
-      heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2400&auto=format&fit=crop',
+      heroImage: 'images/dubai-harbour-hero-image.jpg',
       editorialSplit: {
         col1Heading: '01 / Luxury Living Narrative',
         col1Text: 'The challenge was to communicate the exclusivity of the residences while maintaining a clear pathway toward property exploration and enquiry. Large-format imagery, curated content hierarchy, and immersive transitions create a seamless storytelling experience.',
@@ -117,33 +117,20 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         media: [
           {
-            type: 'video',
-            src: 'images/jp-video.mp4',
-            poster: 'images/dubai-harbour-feature.jpg',
-            caption: 'Dubai Harbour Waterfront — Architectural Kinetic Motion Reel',
-            badge: '4K MOTION REEL'
-          },
-          {
             type: 'image',
             image: 'images/dubai-harbour-feature.jpg',
             caption: 'Architectural Façade & Daylight Refraction Perspective',
             badge: 'HIGH-RES CAPTURE'
-          },
-          {
-            type: 'image',
-            image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400&auto=format&fit=crop',
-            caption: 'Waterfront Living & Marina Lifestyle',
-            badge: 'WATERFRONT VIEW'
           }
         ]
       },
       carousel: [
         {
-          image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2400&auto=format&fit=crop',
+          image: 'images/dubai-harbour-carousel-01.jpg',
           caption: 'Waterfront Lifestyle & Marina Experience'
         },
         {
-          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop',
+          image: 'images/dubai-harbour-carousel-02.jpg',
           caption: 'Luxury Residences & Architectural Showcase'
         }
       ],
@@ -173,28 +160,12 @@ document.addEventListener('DOMContentLoaded', () => {
       galleryDescription: 'The gallery for Dubai Harbour Residences spans the amber-hued tower and its waterfront setting, the promenade-level retail colonnade, the elevated pool terraces and the residents’ wellness floors. Interior renders show the arrival lobby, open-plan living and dining spaces, principal bedrooms and marble bathrooms across the one to five-bedroom residences.',
       galleryAsymmetric: [
         {
-          image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2400&auto=format&fit=crop',
+          image: 'images/dubai-harbour-gallery-01.jpg',
           caption: 'Waterfront Elevation & Marina Skyline'
         },
         {
-          image: 'images/dubai-harbour-feature.jpg',
+          image: 'images/dubai-harbour-gallery-02.jpg',
           caption: 'Architectural Façade & Daylight Refraction'
-        },
-        {
-          image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2400&auto=format&fit=crop',
-          caption: 'Marina Promenade & Waterfront Lifestyle'
-        },
-        {
-          image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2400&auto=format&fit=crop',
-          caption: 'Principal Living Suite & Marble Finishes'
-        },
-        {
-          image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2400&auto=format&fit=crop',
-          caption: 'Private Sunset Terrace & Ocean Perspective'
-        },
-        {
-          image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop',
-          caption: 'Elevated Wellness & Infinity Horizon Pool'
         }
       ],
       prevId: 'moneymaven',
@@ -230,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
           {
             type: 'video',
             src: 'images/jp-video.mp4',
-            poster: 'images/jumeriah-peninsula-feature-01.jpg',
+            poster: 'images/jp-video-poster.png',
             caption: 'Jumeriah Peninsula Bay — Cinematic Lifestyle & Oceanfront Reel',
             badge: '4K CINEMATIC'
           },
@@ -304,179 +275,255 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       ],
       prevId: 'dubaiharbour',
+      nextId: 'visit-dubai'
+    },
+    'visit-dubai': {
+      title: 'Visit Dubai',
+      category: 'Travel Experience &bull; Mobile App Innovation',
+      client: 'Dubai Department of Economy & Tourism',
+      year: '2024',
+      discipline: 'Product Strategy & UX/UI Design',
+      scope: 'Feature Ideation, User Experience Design, Mobile App Design, Prototyping',
+      location: 'Dubai, U.A.E.',
+      description: 'A concept proposal developed as part of a strategic product pitch for the Visit Dubai mobile application. The objective was to enhance visitor onboarding, simplify travel planning, improve destination discovery, and create a more personalized experience through intelligent assistance, contextual services, and social travel features.',
+      heroImage: 'images/visit-dubai-hero.jpg',
+
+      editorialSplit: {
+        col1Heading: '01 / Personalized Visitor Journeys',
+        col1Text: 'The proposal introduced a tailored onboarding experience that identifies whether users are residents or visitors. This simple distinction enables the app to surface more relevant content, services, events, and recommendations based on individual needs and travel intent.',
+        col2Heading: '02 / The Digital Travel Companion',
+        col2Text: 'Modern travelers expect immediate answers and seamless access to services. The concept reimagined Visit Dubai as a proactive travel companion capable of assisting users before arrival, during their stay, and throughout their exploration of the city.'
+      },
+
+      splitFeature: {
+        image: 'images/visit-dubai-feature.jpg',
+        eyebrow: 'SMARTER TRAVEL EXPERIENCES',
+        quote: 'Helping visitors discover, navigate, and experience Dubai with confidence.',
+        text: 'The proposed experience combines AI-powered assistance, travel utilities, social trip planning, location-based discovery, and immersive engagement features to create a unified destination companion for every traveler.',
+        metrics: [
+          { label: 'User Types', value: '2' },
+          { label: 'Feature Concepts', value: '10+' },
+          { label: 'Experience', value: 'Mobile First' }
+        ],
+
+        media: [
+          {
+            type: 'video',
+            src: 'images/vd-onboarding-new.mp4',
+            poster: 'images/vd-video-poster.jpg',
+            caption: 'Resident vs Visitor Personalized Onboarding',
+            badge: 'ONBOARDING'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-home-experience.mp4',
+            poster: 'images/vd-video-poster.jpg',
+            caption: 'Useful Helpers & Quick Actions Dashboard',
+            badge: 'HOME EXPERIENCE'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-chatbot.mp4',
+            poster: 'images/vd-video-poster-chat.jpg',
+            caption: 'AI Travel Assistant & Conversational Support',
+            badge: 'CHATBOT'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-more.mp4',
+            poster: 'images/vd-video-poster-more.jpg',
+            caption: 'Travel Services & Utility Hub',
+            badge: 'MORE MENU'
+          },
+          {
+            type: 'image',
+            image: 'images/visit-dubai-feature-05.jpg',
+            caption: 'Get Started Journey & Travel Essentials',
+            badge: 'TRAVEL SERVICES'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-invite-split-bill.mp4',
+            poster: 'images/vd-video-poster-social-travel.jpg',        
+            caption: 'Group Trip Planning & Cost Splitting',
+            badge: 'SOCIAL TRAVEL'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-wayfinder.mp4',
+            poster: 'images/vd-video-poster-location-discovery.jpg',
+            caption: 'Wayfinder AR Navigation Experience',
+            badge: 'LOCATION DISCOVERY'
+          },
+          {
+            type: 'video',
+            src: 'images/vd-welcome-pack.mp4',
+            poster: 'images/vd-video-poster-welcome-pack.jpg',
+            caption: 'Welcome Pack for First-Time Visitors',
+            badge: 'CULTURAL GUIDE'
+          },
+          {
+            type: 'image',
+            image: 'images/visit-dubai-feature-09.jpg',
+            caption: 'Festival Notifications & Event Discovery',
+            badge: 'SMART ALERTS'
+          },
+          {
+            type: 'image',
+            image: 'images/visit-dubai-feature-10.jpg',
+            caption: 'Dubai Frame Photo Filter Experience',
+            badge: 'ENGAGEMENT'
+          },
+          {
+            type: 'image',
+            image: 'images/visit-dubai-feature-11.jpg',
+            caption: 'VR Ticket Hunt & Landmark Rewards',
+            badge: 'GAMIFICATION'
+          }
+        ]
+      },
+
+      carousel: [
+        {
+          image: 'images/visit-dubai-carousel-01.jpg',
+          caption: 'Personalized Travel Onboarding Experience'
+        }
+      ],
+
+      deliverablesList: [
+        {
+          num: '01',
+          title: 'Personalized User Onboarding',
+          desc: 'Introduced resident and visitor journeys to deliver contextually relevant content and recommendations.'
+        },
+        {
+          num: '02',
+          title: 'AI-Powered Travel Assistant',
+          desc: 'Designed a conversational experience capable of answering travel questions and surfacing essential services.'
+        },
+        {
+          num: '03',
+          title: 'Travel Services Ecosystem',
+          desc: 'Unified visa assistance, eSIM activation, bookings, transportation, currency conversion, and emergency support.'
+        },
+        {
+          num: '04',
+          title: 'Collaborative Trip Planning',
+          desc: 'Enabled travelers to invite companions, manage itineraries, and split trip expenses seamlessly.'
+        },
+        {
+          num: '05',
+          title: 'AR & Gamified Discovery Features',
+          desc: 'Proposed immersive experiences including Wayfinder navigation, Dubai Frame filters, and landmark reward hunts.'
+        }
+      ],
+
+      galleryHeading: 'Reimagining the visitor experience',
+
+      galleryDescription: 'The concept explored how Visit Dubai could evolve from a destination guide into a comprehensive travel companion. By combining personalized onboarding, AI assistance, practical travel utilities, social planning tools, and immersive discovery experiences, the proposal aimed to support visitors throughout every stage of their journey.',
+
+      galleryAsymmetric: [
+        {
+          image: 'images/visit-dubai-gallery-01.jpg',
+          caption: 'Resident & Visitor Experience Selection'
+        },
+        {
+          image: 'images/visit-dubai-gallery-02.jpg',
+          caption: 'AI Travel Assistant Conversations'
+        },
+        {
+          image: 'images/visit-dubai-gallery-03.jpg',
+          caption: 'Travel Services & Utility Hub'
+        },
+        {
+          image: 'images/visit-dubai-gallery-04.jpg',
+          caption: 'Group Trip Planning & Expense Sharing'
+        },
+        {
+          image: 'images/visit-dubai-gallery-05.jpg',
+          caption: 'Wayfinder & Interactive Discovery Features'
+        }
+      ],
+
+      prevId: 'jumeriahpeninsula',
       nextId: 'wealthwave'
     },
-'visit-dubai': {
-  title: 'Visit Dubai',
-  category: 'Travel Experience &bull; Mobile App Innovation',
-  client: 'Dubai Department of Economy & Tourism',
-  year: '2024',
-  discipline: 'Product Strategy & UX/UI Design',
-  scope: 'Feature Ideation, User Experience Design, Mobile App Design, Prototyping',
-  location: 'Dubai, U.A.E.',
-  description: 'A concept proposal developed as part of a strategic product pitch for the Visit Dubai mobile application. The objective was to enhance visitor onboarding, simplify travel planning, improve destination discovery, and create a more personalized experience through intelligent assistance, contextual services, and social travel features.',
-  heroImage: 'images/visit-dubai-hero.jpg',
-
-  editorialSplit: {
-    col1Heading: '01 / Personalized Visitor Journeys',
-    col1Text: 'The proposal introduced a tailored onboarding experience that identifies whether users are residents or visitors. This simple distinction enables the app to surface more relevant content, services, events, and recommendations based on individual needs and travel intent.',
-    col2Heading: '02 / The Digital Travel Companion',
-    col2Text: 'Modern travelers expect immediate answers and seamless access to services. The concept reimagined Visit Dubai as a proactive travel companion capable of assisting users before arrival, during their stay, and throughout their exploration of the city.'
-  },
-
-  splitFeature: {
-    image: 'images/visit-dubai-feature.jpg',
-    eyebrow: 'SMARTER TRAVEL EXPERIENCES',
-    quote: 'Helping visitors discover, navigate, and experience Dubai with confidence.',
-    text: 'The proposed experience combines AI-powered assistance, travel utilities, social trip planning, location-based discovery, and immersive engagement features to create a unified destination companion for every traveler.',
-    metrics: [
-      { label: 'User Types', value: '2' },
-      { label: 'Feature Concepts', value: '10+' },
-      { label: 'Experience', value: 'Mobile First' }
-    ],
-
-    media: [
-      {
-        type: 'video',
-        src: 'images/vd-onboarding-new.mp4',
-        poster: 'images/vd-video-poster.jpg',
-        caption: 'Resident vs Visitor Personalized Onboarding',
-        badge: 'ONBOARDING'
+    wealthwave: {
+      title: 'WealthWave',
+      category: 'Art Direction &bull; Fintech Architecture',
+      client: 'WealthWave Global',
+      year: '2023',
+      discipline: 'Art Direction & Digital Identity',
+      scope: 'Visual Identity, Spatial UI, Motion System, Design System',
+      location: 'Austin, USA',
+      description: 'WealthWave is an algorithmic wealth management platform designed for modern financial clarity. Stripping away legacy dashboard noise, the interface presents complex market telemetry through monolithic spatial typography and tactile real-time data visualisations.',
+      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg',
+      editorialSplit: {
+        col1Heading: '01 / Systematic Clarity',
+        col1Text: 'Traditional financial interfaces overwhelm investors with decorative charts and cognitive clutter. WealthWave replaces dense tables with intuitive spatial allocation blocks that react instantly to market movements.',
+        col2Heading: '02 / Monolithic Aesthetics',
+        col2Text: 'We engineered an adaptive high-contrast typographic system anchored to an uncompromising baseline grid, creating an atmosphere of institutional precision and tactile elegance.'
       },
-      {
-        type: 'video',
-        src: 'images/vd-home-experience.mp4',
-        poster: 'images/vd-video-poster.jpg',
-        caption: 'Useful Helpers & Quick Actions Dashboard',
-        badge: 'HOME EXPERIENCE'
+      splitFeature: {
+        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
+        eyebrow: 'ALGORITHMIC ENGINE',
+        quote: 'Translating real-time volatility into monolithic clarity.',
+        text: 'Every visual component is governed by strict mathematical proportions, ensuring instantaneous comprehension of high-frequency liquidity across multi-currency portfolios.',
+        metrics: [
+          { label: 'Latency', value: '<80ms' },
+          { label: 'Precision', value: '99.9%' },
+          { label: 'FPS', value: '60 FPS' }
+        ],
+        media: [
+          {
+            type: 'video',
+            src: 'images/jp-video.mp4',
+            poster: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
+            caption: 'Algorithmic Yield Matrix — Kinetic Telemetry Reel',
+            badge: '4K MOTION REEL'
+          },
+          {
+            type: 'image',
+            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
+            caption: 'High-Frequency Execution Terminal',
+            badge: 'HIGH-RES CAPTURE'
+          },
+          {
+            type: 'image',
+            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
+            caption: 'Tactile Portfolio Allocation Architecture',
+            badge: 'SPATIAL COMPONENT'
+          }
+        ]
       },
-      {
-        type: 'video',
-        src: 'images/vd-chatbot.mp4',
-        poster: 'images/vd-video-poster-chat.jpg',
-        caption: 'AI Travel Assistant & Conversational Support',
-        badge: 'CHATBOT'
-      },
-      {
-        type: 'video',
-        src: 'images/vd-more.mp4',
-        poster: 'images/vd-video-poster-more.jpg',
-        caption: 'Travel Services & Utility Hub',
-        badge: 'MORE MENU'
-      },
-      {
-        type: 'image',
-        image: 'images/visit-dubai-feature-05.jpg',
-        caption: 'Get Started Journey & Travel Essentials',
-        badge: 'TRAVEL SERVICES'
-      },
-      {
-        type: 'video',
-        src: 'images/vd-invite-split-bill.mp4',
-        poster: 'images/vd-video-poster-social-travel.jpg',        
-        caption: 'Group Trip Planning & Cost Splitting',
-        badge: 'SOCIAL TRAVEL'
-      },
-      {
-        type: 'video',
-        src: 'images/vd-wayfinder.mp4',
-        poster: 'images/vd-video-poster-location-discovery.jpg',
-        caption: 'Wayfinder AR Navigation Experience',
-        badge: 'LOCATION DISCOVERY'
-      },
-      {
-        type: 'video',
-        src: 'images/vd-welcome-pack.mp4',
-        poster: 'images/vd-video-poster-welcome-pack.jpg',
-        caption: 'Welcome Pack for First-Time Visitors',
-        badge: 'CULTURAL GUIDE'
-      },
-      {
-        type: 'image',
-        image: 'images/visit-dubai-feature-09.jpg',
-        caption: 'Festival Notifications & Event Discovery',
-        badge: 'SMART ALERTS'
-      },
-      {
-        type: 'image',
-        image: 'images/visit-dubai-feature-10.jpg',
-        caption: 'Dubai Frame Photo Filter Experience',
-        badge: 'ENGAGEMENT'
-      },
-      {
-        type: 'image',
-        image: 'images/visit-dubai-feature-11.jpg',
-        caption: 'VR Ticket Hunt & Landmark Rewards',
-        badge: 'GAMIFICATION'
-      }
-    ]
-  },
-
-  carousel: [
-    {
-      image: 'images/visit-dubai-carousel-01.jpg',
-      caption: 'Personalized Travel Onboarding Experience'
-    }
-  ],
-
-  deliverablesList: [
-    {
-      num: '01',
-      title: 'Personalized User Onboarding',
-      desc: 'Introduced resident and visitor journeys to deliver contextually relevant content and recommendations.'
+      carousel: [
+        {
+          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg',
+          caption: 'Real-Time Yield Telemetry & Liquidity Matrix'
+        },
+        {
+          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
+          caption: 'Monolithic Asset Clustering Interface'
+        }
+      ],
+      deliverablesList: [
+        { num: '01', title: 'Algorithmic Telemetry Dashboard', desc: 'Real-time WebGL portfolio visualization engineered for institutional clarity.' },
+        { num: '02', title: 'Tactile Design Tokens', desc: 'Strict Swiss typographic hierarchy engineered for sub-second data legibility.' },
+        { num: '03', title: 'High-Frequency Settlement Engine', desc: 'Instantaneous transaction flow with tactile micro-interactions.' },
+        { num: '04', title: 'Design System Architecture', desc: 'Scalable multi-platform component library deployed across web and mobile.' }
+      ],
+      galleryHeading: 'Algorithmic precision in motion',
+      galleryDescription: 'The visual archive for WealthWave explores high-contrast trading terminals, spatial liquidity representations, tactile rebalancing states, and multi-currency portfolio management.',
+      galleryAsymmetric: [
+        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg', caption: 'Monolithic Spatial Architecture Perspective' },
+        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Mobile Liquidity View & Typography Hierarchy' },
+        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Dark Theme High-Contrast Interaction State' },
+        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Spatial Liquidity Matrix Telemetry' },
+        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Tactile 3D Asset Rebalancing Cluster' }
+      ],
+      prevId: 'visit-dubai',
+      nextId: 'infuse'
     },
-    {
-      num: '02',
-      title: 'AI-Powered Travel Assistant',
-      desc: 'Designed a conversational experience capable of answering travel questions and surfacing essential services.'
-    },
-    {
-      num: '03',
-      title: 'Travel Services Ecosystem',
-      desc: 'Unified visa assistance, eSIM activation, bookings, transportation, currency conversion, and emergency support.'
-    },
-    {
-      num: '04',
-      title: 'Collaborative Trip Planning',
-      desc: 'Enabled travelers to invite companions, manage itineraries, and split trip expenses seamlessly.'
-    },
-    {
-      num: '05',
-      title: 'AR & Gamified Discovery Features',
-      desc: 'Proposed immersive experiences including Wayfinder navigation, Dubai Frame filters, and landmark reward hunts.'
-    }
-  ],
-
-  galleryHeading: 'Reimagining the visitor experience',
-
-  galleryDescription: 'The concept explored how Visit Dubai could evolve from a destination guide into a comprehensive travel companion. By combining personalized onboarding, AI assistance, practical travel utilities, social planning tools, and immersive discovery experiences, the proposal aimed to support visitors throughout every stage of their journey.',
-
-  galleryAsymmetric: [
-    {
-      image: 'images/visit-dubai-gallery-01.jpg',
-      caption: 'Resident & Visitor Experience Selection'
-    },
-    {
-      image: 'images/visit-dubai-gallery-02.jpg',
-      caption: 'AI Travel Assistant Conversations'
-    },
-    {
-      image: 'images/visit-dubai-gallery-03.jpg',
-      caption: 'Travel Services & Utility Hub'
-    },
-    {
-      image: 'images/visit-dubai-gallery-04.jpg',
-      caption: 'Group Trip Planning & Expense Sharing'
-    },
-    {
-      image: 'images/visit-dubai-gallery-05.jpg',
-      caption: 'Wayfinder & Interactive Discovery Features'
-    }
-  ],
-
-  prevId: 'jumeriahpeninsula',
-  nextId: 'wellafi'
-},
     infuse: {
       title: 'Infuse',
       category: 'Web Design &bull; Spatial Audio Showcase',
@@ -841,8 +888,24 @@ document.addEventListener('DOMContentLoaded', () => {
       caseModalCategory.innerHTML = `${data.category} &bull; ARCHIVE REF: ${projectId.toUpperCase()}`;
     }
 
-    const prevProject = projectsData[data.prevId];
-    const nextProject = projectsData[data.nextId];
+    // Dynamic fallback to ensure unbroken circular navigation across all projects
+    const projectKeys = Object.keys(projectsData);
+    const currentIdx = projectKeys.indexOf(projectId);
+
+    let safePrevKey = data.prevId && projectsData[data.prevId] ? data.prevId : null;
+    let safeNextKey = data.nextId && projectsData[data.nextId] ? data.nextId : null;
+
+    if (!safePrevKey && currentIdx !== -1) {
+      const prevIndex = (currentIdx - 1 + projectKeys.length) % projectKeys.length;
+      safePrevKey = projectKeys[prevIndex];
+    }
+    if (!safeNextKey && currentIdx !== -1) {
+      const nextIndex = (currentIdx + 1) % projectKeys.length;
+      safeNextKey = projectKeys[nextIndex];
+    }
+
+    const prevProject = safePrevKey ? projectsData[safePrevKey] : null;
+    const nextProject = safeNextKey ? projectsData[safeNextKey] : null;
 
     caseModalContent.innerHTML = `
       <!-- 1. Header & Vertical Meta Split -->
@@ -1127,19 +1190,19 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- 8. Case Study Bottom Action Bar (Prev / Next Project Navigation) -->
       <div class="case-next-project-bar">
         <div class="case-nav-preview">
-          <span class="next-kicker">PROJECT NAVIGATION</span>
+          <span class="next-kicker">NEXT CASE STUDY</span>
           <h3 class="next-title">${nextProject ? nextProject.title : 'Overview'}</h3>
         </div>
         <div class="case-nav-btn-group">
-          ${data.prevId ? `
-            <button type="button" class="btn-editorial stroke" id="prevProjectBtn" data-prev-id="${data.prevId}">
+          ${prevProject ? `
+            <button type="button" class="btn-editorial stroke" id="prevProjectBtn" data-prev-id="${safePrevKey}" aria-label="Previous project: ${prevProject.title}">
               <span class="btn-arrow-icon">&larr;</span>
-              <span>Load Prev Project</span>
+              <span>${prevProject.title}</span>
             </button>
           ` : ''}
-          ${data.nextId ? `
-            <button type="button" class="btn-editorial solid" id="nextProjectBtn" data-next-id="${data.nextId}">
-              <span>Load Next Project</span>
+          ${nextProject ? `
+            <button type="button" class="btn-editorial solid" id="nextProjectBtn" data-next-id="${safeNextKey}" aria-label="Next project: ${nextProject.title}">
+              <span>${nextProject.title}</span>
               <span class="btn-arrow-icon">&rarr;</span>
             </button>
           ` : ''}
@@ -1649,8 +1712,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
         const prevId = prevBtn.getAttribute('data-prev-id');
-        openCaseStudy(prevId);
-        caseModalContent.scrollTop = 0;
+        if (prevId && projectsData[prevId]) {
+          openCaseStudy(prevId);
+          caseModalContent.scrollTop = 0;
+        }
       });
     }
 
@@ -1659,8 +1724,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nextBtn) {
       nextBtn.addEventListener('click', () => {
         const nextId = nextBtn.getAttribute('data-next-id');
-        openCaseStudy(nextId);
-        caseModalContent.scrollTop = 0;
+        if (nextId && projectsData[nextId]) {
+          openCaseStudy(nextId);
+          caseModalContent.scrollTop = 0;
+        }
       });
     }
   }
