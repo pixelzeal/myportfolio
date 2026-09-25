@@ -931,13 +931,14 @@ document.addEventListener('DOMContentLoaded', () => {
               <span class="meta-v-label">Scope</span>
               <span class="meta-v-value">${data.scope}</span>
             </div>
+            ${data.liveUrl ? `
             <div class="case-meta-vertical-item">
               <span class="meta-v-label">Live URL</span>
               <span class="meta-v-value">
                 <a href="${data.liveUrl}" target="_blank" rel="noopener noreferrer">View Project</a>
               </span>
             </div>
-
+            ` : ''}
           </div>
 
           <!-- Right: Project Narrative -->

@@ -1571,7 +1571,19 @@ ul, ol {
   opacity: 1;
 }
 
-.case-modal-container,
+.case-modal-container {
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4);
+  transform: translateY(40px) scale(0.98);
+  opacity: 0;
+  transition: transform 0.5s var(--ease-editorial), opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .about-modal-container {
   position: absolute;
   inset: 1.5rem;
@@ -1689,6 +1701,17 @@ ul, ol {
   font-weight: 500;
   color: var(--text-primary);
   line-height: 1.45;
+}
+
+.meta-v-value a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.meta-v-value a:hover {
+  opacity: 0.7;
 }
 
 /* Narrative Prose Column */
@@ -3218,7 +3241,10 @@ ul, ol {
     width: 100% !important;
   }
   
-  .case-modal-container,
+  .case-modal-container {
+    inset: 0;
+  }
+
   .about-modal-container {
     inset: 0.5rem;
   }
@@ -3501,7 +3527,10 @@ ul, ol {
     height: 300px;
   }
 
-  .case-modal-container,
+  .case-modal-container {
+    inset: 0;
+  }
+
   .about-modal-container {
     inset: 0.25rem;
   }
