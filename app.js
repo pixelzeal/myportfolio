@@ -7,86 +7,163 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Project Showcase Database ---
   const projectsData = {
-    moneymaven: {
-      title: 'MoneyMaven',
-      category: 'Art Direction &bull; Digital Banking Concept',
-      client: 'MoneyMaven Inc.',
-      year: '2020',
-      discipline: 'Art Direction & Concept',
-      scope: 'Visual Identity, Spatial UI, Design System, Interaction Prototyping',
-      location: 'Chicago, USA',
-      description: 'MoneyMaven is a next-generation wealth management platform engineered for intuitive multi-asset tracking and digital liquidity. We conceived a brutalist yet fluid 3D visual language that strips away legacy banking anxiety, elevating portfolio rebalancing into a tactile, high-art experience.',
-      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ca23c5bce3fa2175427_hugol-halpingston-4OyLq2yN9u0-unsplash.jpg',
+    edenhouse: {
+      title: 'Eden House',
+      category: 'Concept Proposal • Luxury Real Estate Platform',
+      client: 'Eden House',
+      year: '2024',
+      discipline: 'UX/UI Design & Digital Experience',
+      scope: 'Website Strategy, Information Architecture, Property Discovery, Responsive Experience',
+      liveUrl: 'https://www.edenhouse.ae/en',
+      location: 'Dubai, U.A.E.',
+      description: 'A proposal to reimagine the Eden House digital experience as a central gateway for the brand’s growing portfolio of luxury residences. The concept introduces a premium property discovery experience that allows prospective buyers to explore multiple developments while seamlessly transitioning into dedicated property detail pages such as Eden House Al Satwa.',
+
+      heroImage: 'images/eden-house-hero.jpg',
+
       editorialSplit: {
-        col1Heading: '01 / The Strategic Challenge',
-        col1Text: 'Traditional financial interfaces rely on decorative charts and legacy dashboard metaphors that overwhelm high-net-worth investors. Our mandate was to eliminate cognitive friction by translating multi-currency portfolios into organic, monolithic spatial compositions.',
-        col2Heading: '02 / The Kinetic System',
-        col2Text: 'We engineered an adaptive motion system where data density shifts according to user focus. Asset allocations are treated as sculptural volumes that deform subtly under real-time market fluctuations, turning balance sheets into living digital artifacts.'
+        col1Heading: '01 / The Brief',
+        col1Text: 'Eden House required a digital experience capable of showcasing multiple luxury developments through a unified platform. The proposal focused on creating a central destination where users could discover properties including Marasi, Za’abeel, DIFC, The Canal, Al Satwa, and The Park while maintaining the distinct identity of each development.',
+
+        col2Heading: '02 / The Challenge',
+        col2Text: 'The challenge was balancing portfolio-level exploration with property-specific storytelling. Users needed to quickly compare developments, filter homes based on their preferences, and access detailed property information without feeling lost within a complex real estate ecosystem.',
+
+    /*     images: [
+          {
+            image: 'images/eden-house-editorial-01.jpg',
+            caption: 'Property Gateway Experience — Multi-Development Discovery'
+          },
+          {
+            image: 'images/eden-house-editorial-02.jpg',
+            caption: 'Eden House Collection — Portfolio Navigation System'
+          }
+        ] */
       },
+
+      approach: {
+        col1Heading: '01 / Our Approach',
+        col1Text: 'We structured the experience around a property discovery journey beginning with lifestyle aspirations rather than listings. Visitors can explore developments through location, bedroom count, and budget preferences before diving into individual property experiences.',
+
+        col2Heading: '02 / Property-Led Storytelling',
+        col2Text: 'Each development was treated as a premium destination with its own narrative, amenities, architecture, and lifestyle proposition. The design system ensures consistency across all developments while allowing every property to maintain a unique visual identity.',
+
+        /*     images: [
+              {
+                image: 'images/eden-house-approach-01.jpg',
+                caption: 'Property Discovery Framework & User Journey Mapping'
+              }
+            ] */
+      },
+
+      result: {
+        text: 'The proposal transformed Eden House from a traditional property showcase into a scalable luxury real estate platform capable of supporting multiple developments, future launches, and personalized property discovery journeys while maintaining a premium brand presence throughout the experience.'
+      },
+
       splitFeature: {
-        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-        eyebrow: 'ARCHITECTURAL FRAMEWORK',
-        quote: 'Stripping away ornamental noise to achieve mathematical clarity.',
-        text: 'Every visual component is anchored to an uncompromising 8pt baseline grid. By restricting the color palette to ultra-high-contrast monochrome with subtle glass refractions, financial decisions happen in an atmosphere of supreme calm.',
+        image: 'images/eden-house-al-satwa-feature.jpg',
+        eyebrow: 'EDEN HOUSE AL SATWA',
+        quote: 'More than an address. A refined approach to modern luxury living.',
+        text: 'As part of the proposal, a dedicated property detail experience was designed for Eden House Al Satwa. The page highlights architecture, amenities, location advantages, and lifestyle benefits while providing clear pathways toward registration and availability enquiries.',
+
         metrics: [
-          { label: 'Latency', value: '< 120ms' },
-          { label: 'Typography', value: 'Swiss Grotesk' },
-          { label: 'Framerate', value: '60 FPS' }
+          { label: 'Villas', value: '32' },
+          { label: 'Price From', value: '2.5M AED' },
+          { label: 'Location', value: 'Jumeirah' }
         ],
+
         media: [
           {
             type: 'video',
-            src: 'images/jp-video.mp4',
-            poster: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'Monolithic Spatial Engine — Real-time 3D Telemetry Reel',
-            badge: '4K MOTION REEL'
+            src: 'images/eden-house.mp4',
+            poster: 'images/eden-house-split-feature-video-thumb.jpg',
+            caption: 'Eden House Visual Walkthrough',
+            badge: 'VIDEO WALKTHROUGH'
           },
           {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'Execution Terminal — High-Contrast Monolith',
-            badge: 'HIGH-RES CAPTURE'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-            caption: 'Tactile Rebalancing State Architecture',
-            badge: 'SPATIAL COMPONENT'
+            type: 'video',
+            src: 'images/eden-house-property-detail.mp4',
+            poster: 'images/eden-house-al-satwa-split-feature-thumb.jpg',
+            caption: 'Al Satwa Property Detail Experience',
+            badge: 'VIDEO WALKTHROUGH'
           }
         ]
       },
+
       carousel: [
         {
-          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg',
-          caption: 'Spatial Liquidity Dashboard — Multi-asset yield matrix'
+          image: 'images/eden-house-feature-01.jpg',
+          caption: 'World-Class Gym Facilities'
         },
         {
-          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-          caption: 'Tactile Rebalancing State — Monolithic 3D asset cluster'
+          image: 'images/eden-house-feature-02.jpg',
+          caption: 'Safe Outdoor Kids Pool & Play Area'
         },
         {
-          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-          caption: 'Execution Terminal — Instantaneous cross-chain settlement'
+          image: 'images/eden-house-feature-03.jpg',
+          caption: 'Infinity Pool with Panoramic Sea Views'
         }
       ],
+
       deliverablesList: [
-        { num: '01', title: 'Monolithic Spatial Dashboard', desc: 'Real-time WebGL portfolio telemetry with zero extraneous visual noise.' },
-        { num: '02', title: 'Tactile Typography & Design Tokens', desc: 'Strict Swiss typographic hierarchy engineered for sub-second data legibility.' },
-        { num: '03', title: 'Instantaneous Settlement Engine', desc: 'High-velocity transaction flow featuring physical feedback micro-interactions.' },
-        { num: '04', title: 'Comprehensive Enterprise Design System', desc: 'Cross-platform component library deployed across iOS, macOS, and Web.' }
+        {
+          num: '01',
+          title: 'Property Discovery Gateway',
+          desc: 'Designed a centralized platform connecting multiple Eden House developments through a seamless discovery experience.'
+        },
+        {
+          num: '02',
+          title: 'Advanced Property Search',
+          desc: 'Created filtering journeys based on location, bedroom count, and budget preferences.'
+        },
+        {
+          num: '03',
+          title: 'Al Satwa Property Experience',
+          desc: 'Designed a dedicated property detail page showcasing architecture, amenities, pricing, and availability.'
+        },
+        {
+          num: '04',
+          title: 'Interactive Location Experience',
+          desc: 'Integrated nearby destinations and neighborhood exploration through map-based interactions.'
+        },
+        {
+          num: '05',
+          title: 'Lead Generation & Registration Flows',
+          desc: 'Optimized enquiry and registration experiences to support sales and community engagement.'
+        }
       ],
-      galleryHeading: 'Monolithic spatial liquidity',
-      galleryDescription: 'The visual archive for MoneyMaven highlights multi-currency yield matrices, monolithic 3D asset clusters, high-contrast dark theme terminals, and tactile mobile component telemetry across responsive platforms.',
+
+      galleryHeading: 'A collection of distinguished addresses',
+
+      galleryDescription: 'The Eden House proposal focused on creating a premium ecosystem for luxury property discovery. From the portfolio gateway experience to the dedicated Al Satwa property page, every touchpoint was designed to showcase architecture, lifestyle amenities, location advantages, and the elevated living experience associated with the Eden House brand.',
+
       galleryAsymmetric: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Mobile Liquidity View & Typography Hierarchy' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Dark Theme High-Contrast Interaction State' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Spatial Liquidity Matrix Telemetry' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Tactile 3D Asset Rebalancing Cluster' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg', caption: 'Execution Terminal & Cross-Chain Settlement' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ca23c5bce3fa2175427_hugol-halpingston-4OyLq2yN9u0-unsplash.jpg', caption: 'Monolithic Spatial Architecture Perspective' }
+        {
+          image: 'images/eden-house-gallery-01.jpg',
+          caption: 'Eden House Portfolio Gateway'
+        },
+        {
+          image: 'images/eden-house-gallery-02.jpg',
+          caption: 'Property Search & Discovery Experience'
+        },
+        {
+          image: 'images/eden-house-gallery-03.jpg',
+          caption: 'Al Satwa Property Overview'
+        },
+        {
+          image: 'images/eden-house-gallery-04.jpg',
+          caption: 'Luxury Amenities & Lifestyle Showcase'
+        },
+        {
+          image: 'images/eden-house-gallery-05.jpg',
+          caption: 'Location & Neighborhood Exploration'
+        },
+        {
+          image: 'images/eden-house-gallery-06.jpg',
+          caption: 'Location & Neighborhood Exploration'
+        }
       ],
-      prevId: 'infuse',
-      nextId: 'dubaiharbour'
+
+      prevId: 'visitdubai',
+      nextId: 'wellafi'
     },
     dubaiharbour: {
       title: 'Dubai Harbour Residences',
@@ -364,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
           {
             type: 'video',
             src: 'images/vd-invite-split-bill.mp4',
-            poster: 'images/vd-video-poster-social-travel.jpg',        
+            poster: 'images/vd-video-poster-social-travel.jpg',
             caption: 'Group Trip Planning & Cost Splitting',
             badge: 'SOCIAL TRAVEL'
           },
@@ -1154,8 +1231,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="carousel-viewport${!hasMultiple ? ' no-drag' : ''}" id="carouselViewport">
             <div class="carousel-track" id="carouselTrack">
               ${data.carousel.map((item, idx) => {
-                const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
-                return `
+          const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
+          return `
                 <div class="carousel-slide carousel-lightbox-trigger ${isVideo ? 'carousel-video-slide' : ''}" data-carousel-index="${idx}" role="button" tabindex="0" aria-label="Enlarge media ${idx + 1}: ${item.caption || ''}">
                   ${isVideo ? `
                     <video class="split-video-element" src="${item.src || item.video || item.image}" poster="${item.poster || ''}" playsinline loop muted preload="metadata" draggable="false"></video>
@@ -1170,7 +1247,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
                 </div>
                 `;
-              }).join('')}
+        }).join('')}
             </div>
           </div>
 
@@ -1217,8 +1294,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="case-gallery-rail-viewport" id="galleryRailViewport" tabindex="0" role="region" aria-label="Horizontal image gallery rail">
             <div class="case-gallery-rail" id="galleryRail">
               ${data.galleryAsymmetric.map((item, idx) => {
-                const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
-                return `
+        const isVideo = item.type === 'video' || (item.image && item.image.endsWith('.mp4')) || (item.src && item.src.endsWith('.mp4'));
+        return `
                 <div class="case-gallery-card" data-gallery-index="${idx}">
                   <div class="gallery-card-inner gallery-lightbox-trigger ${isVideo ? 'gallery-video-card' : ''}" data-gallery-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'gallery visual'} in Lightbox">
                     ${isVideo ? `
@@ -1236,7 +1313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
                 </div>
                 `;
-              }).join('')}
+      }).join('')}
             </div>
           </div>
 
@@ -1443,7 +1520,7 @@ document.addEventListener('DOMContentLoaded', () => {
               });
               video.play().then(() => {
                 vWrap.classList.add('is-playing');
-              }).catch(() => {});
+              }).catch(() => { });
             } else {
               video.pause();
               vWrap.classList.remove('is-playing');
@@ -1518,7 +1595,79 @@ document.addEventListener('DOMContentLoaded', () => {
         let carouselScrollStart = 0;
         let carouselHasDragged = false;
 
+        function getSlideWidth() {
+          const firstSlide = carouselViewport.querySelector('.carousel-slide');
+          return (firstSlide && firstSlide.offsetWidth > 0) ? firstSlide.offsetWidth : carouselViewport.clientWidth;
+        }
+
+        function getActiveCarouselIndex() {
+          const width = getSlideWidth();
+          if (width <= 0) return 0;
+          const rawIdx = Math.round(carouselViewport.scrollLeft / width);
+          return Math.min(totalSlides - 1, Math.max(0, rawIdx));
+        }
+
+        function goToCarouselSlide(targetIdx) {
+          const safeIdx = (targetIdx + totalSlides) % totalSlides;
+          const slides = carouselViewport.querySelectorAll('.carousel-slide');
+          const firstSlide = slides[0];
+          const targetSlide = slides[safeIdx];
+          
+          let targetLeft = 0;
+          if (targetSlide && firstSlide) {
+            targetLeft = targetSlide.offsetLeft - firstSlide.offsetLeft;
+          } else {
+            targetLeft = safeIdx * getSlideWidth();
+          }
+
+          carouselViewport.scrollTo({
+            left: targetLeft,
+            behavior: 'smooth'
+          });
+        }
+
+        // Real-time active slide detection & indicator updates
+        function updateActiveCarouselState() {
+          const activeIdx = getActiveCarouselIndex();
+
+          if (caption && data.carousel[activeIdx]) {
+            caption.textContent = data.carousel[activeIdx].caption || '';
+          }
+          if (counter && hasMultiple) {
+            counter.textContent = `${String(activeIdx + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+          }
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle('is-active', idx === activeIdx);
+          });
+        }
+
         if (hasMultiple) {
+          const onMouseMove = (e) => {
+            if (!isCarouselMouseDown) return;
+            const deltaX = e.pageX - carouselStartX;
+            if (Math.abs(deltaX) > 4) {
+              carouselHasDragged = true;
+            }
+            carouselViewport.scrollLeft = carouselScrollStart - deltaX;
+            updateActiveCarouselState();
+          };
+
+          const onMouseUp = () => {
+            if (!isCarouselMouseDown) return;
+            isCarouselMouseDown = false;
+            carouselViewport.classList.remove('is-dragging');
+            window.removeEventListener('mousemove', onMouseMove);
+            window.removeEventListener('mouseup', onMouseUp);
+            window.removeEventListener('mouseleave', onMouseUp);
+
+            if (carouselHasDragged) {
+              const cur = getActiveCarouselIndex();
+              goToCarouselSlide(cur);
+            } else {
+              updateActiveCarouselState();
+            }
+          };
+
           carouselViewport.addEventListener('mousedown', (e) => {
             if (e.button !== 0) return;
             isCarouselMouseDown = true;
@@ -1526,58 +1675,10 @@ document.addEventListener('DOMContentLoaded', () => {
             carouselStartX = e.pageX;
             carouselScrollStart = carouselViewport.scrollLeft;
             carouselViewport.classList.add('is-dragging');
+            window.addEventListener('mousemove', onMouseMove);
+            window.addEventListener('mouseup', onMouseUp);
+            window.addEventListener('mouseleave', onMouseUp);
           });
-
-          window.addEventListener('mousemove', (e) => {
-            if (!isCarouselMouseDown) return;
-            const deltaX = e.pageX - carouselStartX;
-            if (Math.abs(deltaX) > 5) {
-              carouselHasDragged = true;
-            }
-            carouselViewport.scrollLeft = carouselScrollStart - deltaX;
-            updateActiveCarouselState();
-          });
-
-          function stopCarouselDragging() {
-            if (!isCarouselMouseDown) return;
-            isCarouselMouseDown = false;
-            carouselViewport.classList.remove('is-dragging');
-            updateActiveCarouselState();
-          }
-
-          window.addEventListener('mouseup', stopCarouselDragging);
-          window.addEventListener('mouseleave', stopCarouselDragging);
-
-          // Step Navigation Buttons (< and >) - robust index-based stepping & wrapping
-          function getActiveCarouselIndex() {
-            const slides = carouselViewport.querySelectorAll('.carousel-slide');
-            if (!slides.length) return 0;
-            let activeIdx = 0;
-            let minDiff = Infinity;
-            const currentScroll = carouselViewport.scrollLeft;
-
-            slides.forEach((slide, idx) => {
-              const diff = Math.abs(slide.offsetLeft - currentScroll);
-              if (diff < minDiff) {
-                minDiff = diff;
-                activeIdx = idx;
-              }
-            });
-            return activeIdx;
-          }
-
-          function goToCarouselSlide(targetIdx) {
-            const slides = carouselViewport.querySelectorAll('.carousel-slide');
-            if (!slides.length) return;
-            const safeIdx = (targetIdx + slides.length) % slides.length;
-            const targetSlide = slides[safeIdx];
-            if (targetSlide) {
-              carouselViewport.scrollTo({
-                left: targetSlide.offsetLeft,
-                behavior: 'smooth'
-              });
-            }
-          }
 
           if (prevBtn) {
             prevBtn.addEventListener('click', (e) => {
@@ -1605,34 +1706,6 @@ document.addEventListener('DOMContentLoaded', () => {
               const idx = parseInt(dot.getAttribute('data-index'), 10);
               goToCarouselSlide(idx);
             });
-          });
-        }
-
-        // Real-time active slide detection & indicator updates
-        function updateActiveCarouselState() {
-          const slides = carouselViewport.querySelectorAll('.carousel-slide');
-          if (!slides.length) return;
-
-          let activeIdx = 0;
-          let minDiff = Infinity;
-          const currentScroll = carouselViewport.scrollLeft;
-
-          slides.forEach((slide, idx) => {
-            const diff = Math.abs(slide.offsetLeft - currentScroll);
-            if (diff < minDiff) {
-              minDiff = diff;
-              activeIdx = idx;
-            }
-          });
-
-          if (caption && data.carousel[activeIdx]) {
-            caption.textContent = data.carousel[activeIdx].caption || '';
-          }
-          if (counter && hasMultiple) {
-            counter.textContent = `${String(activeIdx + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
-          }
-          dots.forEach((dot, idx) => {
-            dot.classList.toggle('is-active', idx === activeIdx);
           });
         }
 
@@ -2088,7 +2161,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 150);
         }
         lightboxVideo.currentTime = 0;
-        lightboxVideo.play().catch(() => {});
+        lightboxVideo.play().catch(() => { });
       }
     } else {
       if (lightboxVideo) {
@@ -2139,7 +2212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Exit native fullscreen if active
     if (document.fullscreenElement) {
       if (document.exitFullscreen) {
-        document.exitFullscreen().catch(() => {});
+        document.exitFullscreen().catch(() => { });
       } else if (document.webkitExitFullscreen) {
         document.webkitExitFullscreen();
       }
@@ -2150,13 +2223,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!document.fullscreenElement) {
       const el = lightboxOverlay || document.documentElement;
       if (el.requestFullscreen) {
-        el.requestFullscreen().catch(() => {});
+        el.requestFullscreen().catch(() => { });
       } else if (el.webkitRequestFullscreen) {
         el.webkitRequestFullscreen();
       }
     } else {
       if (document.exitFullscreen) {
-        document.exitFullscreen().catch(() => {});
+        document.exitFullscreen().catch(() => { });
       } else if (document.webkitExitFullscreen) {
         document.webkitExitFullscreen();
       }

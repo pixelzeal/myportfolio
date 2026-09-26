@@ -2356,6 +2356,7 @@ ul, ol {
 }
 
 .carousel-viewport {
+  position: relative;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
@@ -2377,6 +2378,7 @@ ul, ol {
 .carousel-viewport.is-dragging {
   cursor: grabbing;
   scroll-snap-type: none;
+  scroll-behavior: auto;
 }
 
 .carousel-viewport.no-drag {
@@ -2387,6 +2389,7 @@ ul, ol {
 .carousel-track {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .carousel-slide {
