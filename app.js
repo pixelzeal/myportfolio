@@ -545,82 +545,181 @@ document.addEventListener('DOMContentLoaded', () => {
       prevId: 'jumeriahpeninsula',
       nextId: 'wealthwave'
     },
-    wealthwave: {
-      title: 'WealthWave',
-      category: 'Art Direction &bull; Fintech Architecture',
-      client: 'WealthWave Global',
-      year: '2023',
-      discipline: 'Art Direction & Digital Identity',
-      scope: 'Visual Identity, Spatial UI, Motion System, Design System',
-      location: 'Austin, USA',
-      description: 'WealthWave is an algorithmic wealth management platform designed for modern financial clarity. Stripping away legacy dashboard noise, the interface presents complex market telemetry through monolithic spatial typography and tactile real-time data visualisations.',
-      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg',
-      editorialSplit: {
-        col1Heading: '01 / Systematic Clarity',
-        col1Text: 'Traditional financial interfaces overwhelm investors with decorative charts and cognitive clutter. WealthWave replaces dense tables with intuitive spatial allocation blocks that react instantly to market movements.',
-        col2Heading: '02 / Monolithic Aesthetics',
-        col2Text: 'We engineered an adaptive high-contrast typographic system anchored to an uncompromising baseline grid, creating an atmosphere of institutional precision and tactile elegance.'
+oceanquest: {
+  title: 'OceanQuest',
+  category: 'Concept &bull; Interactive Learning Experience',
+  client: 'Self-Initiated Concept',
+  year: '2024',
+  discipline: 'Game UI, UX Design & Visual Systems',
+  scope: 'UX Research, Game Interface Design, Learning Experience Design, Prototyping',
+  location: 'Concept Project',
+  description: 'OceanQuest is a concept for an immersive educational platform that combines game-inspired interfaces, conversational AI, and interactive learning modules to transform knowledge discovery into an engaging adventure. Inspired by modern game HUD systems and exploration mechanics, the experience encourages curiosity through progression, rewards, and visual storytelling.',
+  heroImage: 'images/ocean-quest-kb-hero.jpg',
+  editorialSplit: {
+    col1Heading: '01 / The Brief',
+    col1Text: 'Traditional learning platforms often rely on static content and conventional navigation patterns. The goal was to explore how game-inspired interfaces could create a more engaging and memorable learning experience while maintaining clarity and accessibility.',
+
+    col2Heading: '02 / The Challenge',
+    col2Text: 'The challenge was balancing immersive visuals with educational usability. The interface needed to feel futuristic and exploratory without compromising comprehension, navigation, or content discoverability.'
+    ,
+
+    images: [
+      {
+        image: 'images/ocean-quest-kb-exploration.jpg',
+        caption: 'Research into Game HUD Systems & Mission Interfaces'
       },
-      splitFeature: {
-        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-        eyebrow: 'ALGORITHMIC ENGINE',
-        quote: 'Translating real-time volatility into monolithic clarity.',
-        text: 'Every visual component is governed by strict mathematical proportions, ensuring instantaneous comprehension of high-frequency liquidity across multi-currency portfolios.',
-        metrics: [
-          { label: 'Latency', value: '<80ms' },
-          { label: 'Precision', value: '99.9%' },
-          { label: 'FPS', value: '60 FPS' }
-        ],
-        media: [
-          {
-            type: 'video',
-            src: 'images/jp-video.mp4',
-            poster: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'Algorithmic Yield Matrix — Kinetic Telemetry Reel',
-            badge: '4K MOTION REEL'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'High-Frequency Execution Terminal',
-            badge: 'HIGH-RES CAPTURE'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-            caption: 'Tactile Portfolio Allocation Architecture',
-            badge: 'SPATIAL COMPONENT'
-          }
-        ]
+      {
+        image: 'images/ocean-quest-kb-exploration-wireframe.jpg',
+        caption: 'Exploration of Learning Progression & Reward Mechanics'
       },
-      carousel: [
-        {
-          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg',
-          caption: 'Real-Time Yield Telemetry & Liquidity Matrix'
-        },
-        {
-          image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg',
-          caption: 'Monolithic Asset Clustering Interface'
-        }
-      ],
-      deliverablesList: [
-        { num: '01', title: 'Algorithmic Telemetry Dashboard', desc: 'Real-time WebGL portfolio visualization engineered for institutional clarity.' },
-        { num: '02', title: 'Tactile Design Tokens', desc: 'Strict Swiss typographic hierarchy engineered for sub-second data legibility.' },
-        { num: '03', title: 'High-Frequency Settlement Engine', desc: 'Instantaneous transaction flow with tactile micro-interactions.' },
-        { num: '04', title: 'Design System Architecture', desc: 'Scalable multi-platform component library deployed across web and mobile.' }
-      ],
-      galleryHeading: 'Algorithmic precision in motion',
-      galleryDescription: 'The visual archive for WealthWave explores high-contrast trading terminals, spatial liquidity representations, tactile rebalancing states, and multi-currency portfolio management.',
-      galleryAsymmetric: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8bc07ea2875216b3b28f_pawel-czerwinski-6YutWe6awpM-unsplash.jpg', caption: 'Monolithic Spatial Architecture Perspective' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8af3f22c5031bdb1b69e_03.jpg', caption: 'Mobile Liquidity View & Typography Hierarchy' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Dark Theme High-Contrast Interaction State' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Spatial Liquidity Matrix Telemetry' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Tactile 3D Asset Rebalancing Cluster' }
-      ],
-      prevId: 'visit-dubai',
-      nextId: 'infuse'
+      {
+        image: 'images/ocean-quest-kb-exploration-wireframe2.jpg',
+        caption: 'Exploration of Learning Progression & Reward Mechanics'
+      }
+    ]
+  },
+
+  approach: {
+    col1Heading: '01 / Research & Exploration',
+    col1Text: 'The concept was informed by extensive research into game UI patterns, sci-fi control systems, exploration mechanics, mission dashboards, and progression frameworks. Multiple visual directions were explored before converging on an underwater exploration theme that naturally aligned with discovery and learning.',
+
+    col2Heading: '02 / Designing for Engagement',
+    col2Text: 'The experience was structured around progression, achievement, and exploration. Learners interact with an AI guide, complete educational modules, track progress, answer quizzes, and unlock new knowledge through a highly visual journey.',
+
+    images: [
+      {
+        image: 'images/ocean-quest-kb-exploration-reference1.jpg',
+        caption: 'Visual Design Exploration & Interface Evolution'
+      },
+      {
+        image: 'images/ocean-quest-kb-exploration-reference2.jpg',
+        caption: 'Visual Design Exploration & Interface Evolution'
+      }
+    ]
+  },
+
+  result: {
+    text: 'The final concept demonstrates how educational platforms can borrow principles from game design to create richer learning experiences. OceanQuest combines conversational assistance, interactive assessments, visual progression systems, and immersive storytelling into a cohesive product vision.'
+  },
+
+  splitFeature: {
+    image: 'images/oceanquest-feature.jpg',
+    eyebrow: 'LEARNING THROUGH EXPLORATION',
+    quote: 'Transforming knowledge into an interactive adventure.',
+    text: 'OceanQuest reimagines digital learning through AI guidance, visual progression systems, gamified assessments, and immersive environments inspired by underwater exploration.',
+
+    metrics: [
+      { label: 'Modules', value: '5+' },
+      { label: 'Interface Versions', value: 'Multiple' },
+      { label: 'Focus', value: 'Gamified Learning' }
+    ],
+
+    media: [
+      {
+        type: 'video',
+        src: 'images/oq-kb-final.mp4',
+        poster: 'images/oq-kb-video-final-thumb.jpg',
+        caption: 'AI Learning Companion Dashboard',
+        badge: 'HOME'
+      },
+      {
+        type: 'video',
+        src: 'images/oq-kb-old.mp4',
+        poster: 'images/oq-kb-video-old-thumb.jpg',
+        caption: 'Knowledge Assistant & FAQ Experience',
+        badge: 'AI ASSISTANT'
+      },
+      {
+        type: 'video',
+        src: 'images/oq-kb-old2.mp4',
+        poster: 'images/oq-kb-video-old2-thumb.jpg',
+        caption: 'Training Module Progress Tracking',
+        badge: 'PROGRESSION'
+      }
+    ]
+  },
+
+  carousel: [
+    {
+      image: 'images/ocean-quest-kb-feature-01.jpg',
+      caption: 'AI Companion & Learning Dashboard'
     },
+    {
+      image: 'images/ocean-quest-kb-feature-02.jpg',
+      caption: 'Interactive Training & Progress System'
+    },
+    {
+      image: 'images/ocean-quest-kb-feature-03.jpg',
+      caption: 'Gamified Assessment Experience'
+    },
+    {
+      image: 'images/ocean-quest-kb-feature-04.jpg',
+      caption: 'Immersive Visual Design Language'
+    }
+  ],
+
+  deliverablesList: [
+    {
+      num: '01',
+      title: 'Game-Inspired Learning Framework',
+      desc: 'Designed an educational experience based on exploration, progression, and achievement systems.'
+    },
+    {
+      num: '02',
+      title: 'Conversational Knowledge Assistant',
+      desc: 'Created an AI-powered interface for answering questions and guiding learners through content.'
+    },
+    {
+      num: '03',
+      title: 'Interactive Assessment System',
+      desc: 'Developed quiz and training experiences with visual feedback and progression tracking.'
+    },
+    {
+      num: '04',
+      title: 'Immersive Visual Design Language',
+      desc: 'Established a cohesive sci-fi inspired design system influenced by modern game interfaces.'
+    },
+    {
+      num: '05',
+      title: 'Multi-Screen Prototype',
+      desc: 'Produced multiple interface concepts and user flows to validate the learning experience.'
+    }
+  ],
+
+  galleryHeading: 'Exploring the future of learning',
+
+  galleryDescription: 'OceanQuest explores how game design principles can enhance education through visual progression, conversational guidance, interactive assessments, and immersive storytelling. The project evolved through multiple design iterations inspired by modern game interfaces, mission systems, and exploratory experiences.',
+
+  galleryAsymmetric: [
+    {
+      image: 'images/ocean-quest-kb-gallery-01.jpg',
+      caption: 'AI Knowledge Companion'
+    },
+    {
+      image: 'images/ocean-quest-kb-gallery-02.jpg',
+      caption: 'Training Progress Interface'
+    },
+    {
+      image: 'images/ocean-quest-kb-gallery-03.jpg',
+      caption: 'Interactive Assessment Experience'
+    },
+    {
+      image: 'images/ocean-quest-kb-gallery-04.jpg',
+      caption: 'Game HUD Design Exploration'
+    },
+    {
+      image: 'images/ocean-quest-kb-gallery-05.jpg',
+      caption: 'Learning Journey & Progression System'
+    },
+    {
+      image: 'images/ocean-quest-kb-gallery-06.jpg',
+      caption: 'Immersive Visual Design Language'
+    }
+  ],
+
+  prevId: 'edenhouse',
+  nextId: 'visitdubai'
+},
     infuse: {
       title: 'Infuse',
       category: 'Web Design &bull; Spatial Audio Showcase',
