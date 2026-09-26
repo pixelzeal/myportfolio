@@ -1643,7 +1643,55 @@ ul, ol {
 .about-modal-scroll {
   flex: 1;
   overflow-y: auto;
+}
+
+/* Case modal: zero horizontal padding — content is centered via inner wrappers */
+.case-modal-content {
+  padding: clamp(2rem, 5vw, 4.5rem) 0 0;
+  /* Gutter variable drives all inner 1200px wrappers and gallery edge padding */
+  --modal-gutter: clamp(2rem, 5vw, 5rem);
+}
+
+.about-modal-scroll {
   padding: clamp(2rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 4rem);
+}
+
+/* 1200px centered content wrapper — applies to all direct block children
+   except the gallery section and nav bar which break out to full width */
+.case-modal-content > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--modal-gutter);
+  padding-right: var(--modal-gutter);
+  box-sizing: border-box;
+}
+
+/* Gallery section breaks out: full viewport width */
+.case-modal-content > .case-gallery-section {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Gallery intro text stays within 1200px container */
+.case-modal-content > .case-gallery-section .case-gallery-intro,
+.case-modal-content > .case-gallery-section .case-gallery-bottom-bar {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--modal-gutter);
+  padding-right: var(--modal-gutter);
+  box-sizing: border-box;
+}
+
+/* Nav bar breaks out: full width with its own internal padding */
+.case-modal-content > .case-next-project-bar {
+  max-width: 100%;
+  padding-left: var(--modal-gutter);
+  padding-right: var(--modal-gutter);
+  box-sizing: border-box;
+  padding-bottom: clamp(2rem, 5vw, 4.5rem);
 }
 
 /* Case Study Content Layout */
@@ -1735,7 +1783,7 @@ ul, ol {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: clamp(3.5rem, 7vw, 6rem);
-  background: var(--bg-surface);
+  background: transparent;
 }
 
 .case-hero-img {
@@ -1743,6 +1791,7 @@ ul, ol {
   height: clamp(420px, 62vh, 740px);
   object-fit: cover;
   border-radius: 16px;
+  display: block;
 }
 
 /* 2-Column Paragraphs (Editorial Split) */
@@ -1771,12 +1820,11 @@ ul, ol {
   font-weight: 400;
 }
 
-/* Left Interactive Media Carousel & Right Content (Split Feature Storytelling) */
+/* Vertical Interactive Media Carousel (Top) & Content (Bottom) */
 .case-split-feature {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: clamp(2.5rem, 5vw, 5.5rem);
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 4vw, 4rem);
   border-top: 1px solid var(--border-light);
   padding-top: 3.5rem;
   margin-bottom: clamp(3.5rem, 7vw, 6.5rem);
@@ -1842,7 +1890,7 @@ ul, ol {
 .split-image-wrapper {
   position: relative;
   width: 100%;
-  height: clamp(360px, 50vh, 540px);
+  height: clamp(380px, 56vh, 640px);
   border-radius: 16px;
   overflow: hidden;
   background: #0d0d12;
@@ -2121,6 +2169,7 @@ ul, ol {
   letter-spacing: -0.03em;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
 .feature-text {
@@ -2128,6 +2177,7 @@ ul, ol {
   line-height: 1.68;
   color: var(--text-secondary);
   margin-bottom: 2rem;
+  max-width: 820px;
 }
 
 .feature-metrics-grid {
@@ -2504,13 +2554,13 @@ ul, ol {
   display: flex;
   gap: clamp(1.25rem, 2.5vw, 2.25rem);
   width: max-content;
-  padding: 0.25rem 0;
+  padding: 0.25rem var(--modal-gutter, clamp(2rem, 5vw, 5rem));
 }
 
 .case-gallery-card {
-  flex: 0 0 calc((100vw - clamp(2.5rem, 6vw, 6rem)) / 2.3);
-  max-width: 640px;
-  min-width: 340px;
+  flex: 0 0 clamp(320px, calc((100vw - 2 * var(--modal-gutter, clamp(2rem, 5vw, 5rem))) / 2.4), 600px);
+  max-width: 600px;
+  min-width: 280px;
   scroll-snap-align: start;
 }
 
@@ -3253,7 +3303,11 @@ ul, ol {
     padding: 1rem 1.25rem;
   }
 
-  .case-modal-content,
+  .case-modal-content {
+    padding: 1.75rem 0 3.5rem;
+    --modal-gutter: 1.15rem;
+  }
+
   .about-modal-scroll {
     padding: 1.75rem 1.15rem 3.5rem;
   }
@@ -3535,7 +3589,11 @@ ul, ol {
     inset: 0.25rem;
   }
 
-  .case-modal-content,
+  .case-modal-content {
+    padding: 1.25rem 0 3rem;
+    --modal-gutter: 0.85rem;
+  }
+
   .about-modal-scroll {
     padding: 1.25rem 0.85rem 3rem;
   }

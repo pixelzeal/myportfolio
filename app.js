@@ -166,6 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           image: 'images/dubai-harbour-gallery-02.jpg',
           caption: 'Architectural Façade & Daylight Refraction'
+        },
+        {
+          image: 'images/dubai-harbour-gallery-03.jpg',
+          caption: 'Responsive view'
         }
       ],
       prevId: 'moneymaven',
