@@ -103,7 +103,23 @@ document.addEventListener('DOMContentLoaded', () => {
         col1Heading: '01 / Luxury Living Narrative',
         col1Text: 'The challenge was to communicate the exclusivity of the residences while maintaining a clear pathway toward property exploration and enquiry. Large-format imagery, curated content hierarchy, and immersive transitions create a seamless storytelling experience.',
         col2Heading: '02 / Conversion-Driven Experience',
-        col2Text: 'Every interaction was designed to guide prospective buyers naturally through residence collections, amenities, floor plans, and location highlights while reducing friction in the enquiry journey.'
+        col2Text: 'Every interaction was designed to guide prospective buyers naturally through residence collections, amenities, floor plans, and location highlights while reducing friction in the enquiry journey.',
+        images: [
+          { image: 'images/dubai-harbour-gallery-01.jpg', caption: 'Waterfront Elevation — Marina Skyline Perspective' },
+          { image: 'images/dubai-harbour-gallery-02.jpg', caption: 'Architectural Façade — Daylight Refraction Study' }
+        ]
+      },
+      approach: {
+        col1Heading: '01 / Our Approach',
+        col1Text: 'We built the platform around a clear visual hierarchy — property photography leads every page, with supporting content introduced progressively as the user engages deeper. Whitespace and editorial typography reinforce the premium nature of the development.',
+        col2Heading: '02 / Design System',
+        col2Text: 'A comprehensive design system was established from the outset, covering typography scales, interactive states, colour tokens, and grid structures. This ensures consistency across every touchpoint and accelerates future design and development cycles.',
+        images: [
+          { image: 'images/dubai-harbour-feature.jpg', caption: 'Design System — Component Architecture Overview' }
+        ]
+      },
+      result: {
+        text: 'The Dubai Harbour Residences digital platform launched to immediate commercial success, with enquiry rates exceeding projections within the first quarter. The experience has since become the benchmark for luxury real estate digital presence in the UAE market, recognised for its seamless blend of editorial storytelling and conversion-focused interaction design.'
       },
       splitFeature: {
         image: 'images/dubai-harbour-feature.jpg',
@@ -957,7 +973,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <img src="${data.heroImage}" alt="${data.title} master visual showcase" class="case-hero-img" loading="lazy" />
       </div>
 
-      <!-- 3. Block: 2-Column Paragraph (Editorial Split) -->
+      <!-- 3. Block: 2-Column Paragraph (Editorial Split) + Optional Image Stack -->
       ${data.editorialSplit ? `
         <div class="case-editorial-split">
           <div class="editorial-col">
@@ -969,9 +985,61 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="split-col-text">${data.editorialSplit.col2Text}</p>
           </div>
         </div>
+        ${data.editorialSplit.images && data.editorialSplit.images.length > 0 ? `
+          <div class="case-editorial-media-stack" data-editorial-group="split">
+            ${data.editorialSplit.images.map((item, idx) => `
+              <div class="case-editorial-media-item">
+                <div class="case-editorial-img-wrap editorial-lightbox-trigger" data-editorial-group="split" data-editorial-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'editorial image'} in Lightbox">
+                  <img src="${item.image}" alt="${item.caption || 'Editorial visual'}" class="case-editorial-media-img" loading="lazy" draggable="false" />
+                  <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen" title="View Fullscreen (F)">
+                    <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
+                      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                  <div class="split-media-glass-overlay"></div>
+                </div>
+                ${item.caption ? `<span class="case-editorial-media-caption">${item.caption}</span>` : ''}
+              </div>
+            `).join('')}
+          </div>
+        ` : ''}
       ` : ''}
 
-      <!-- 4. Block: Left Interactive Media Carousel (Single View Videos + Images) & Right Content (Split Feature Storytelling) -->
+      <!-- 4. Block: Our Approach Section (optional — same layout as editorial split + images) -->
+      ${data.approach ? `
+        <div class="case-approach-section">
+          <div class="case-approach-split case-editorial-split">
+            <div class="editorial-col">
+              <h3 class="split-col-heading">${data.approach.col1Heading}</h3>
+              <p class="split-col-text">${data.approach.col1Text}</p>
+            </div>
+            <div class="editorial-col">
+              <h3 class="split-col-heading">${data.approach.col2Heading}</h3>
+              <p class="split-col-text">${data.approach.col2Text}</p>
+            </div>
+          </div>
+          ${data.approach.images && data.approach.images.length > 0 ? `
+            <div class="case-editorial-media-stack" data-editorial-group="approach">
+              ${data.approach.images.map((item, idx) => `
+                <div class="case-editorial-media-item">
+                  <div class="case-editorial-img-wrap editorial-lightbox-trigger" data-editorial-group="approach" data-editorial-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'approach image'} in Lightbox">
+                    <img src="${item.image}" alt="${item.caption || 'Approach visual'}" class="case-editorial-media-img" loading="lazy" draggable="false" />
+                    <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen" title="View Fullscreen (F)">
+                      <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                    <div class="split-media-glass-overlay"></div>
+                  </div>
+                  ${item.caption ? `<span class="case-editorial-media-caption">${item.caption}</span>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+      ` : ''}
+
+      <!-- 5. Block: Split Feature (carousel images + content) -->
       ${data.splitFeature ? (() => {
         const mediaList = data.splitFeature.media || [{ type: 'image', image: data.splitFeature.image, caption: data.splitFeature.quote, badge: 'FEATURE STILL' }];
         const hasMultiple = mediaList.length > 1;
@@ -1189,6 +1257,15 @@ document.addEventListener('DOMContentLoaded', () => {
               </span>
             </div>
           </div>
+        </div>
+      ` : ''}
+
+      <!-- 7.5. Block: The Result (optional — renders after gallery if data.result is defined) -->
+      ${data.result ? `
+        <div class="case-result-section">
+          <span class="gallery-kicker">THE RESULT</span>
+          <h2 class="result-heading">The Result</h2>
+          <p class="result-text">${data.result.text}</p>
         </div>
       ` : ''}
 
@@ -1707,6 +1784,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     }
+
+    // Lightbox bindings for editorial media stack images (split section + approach section)
+    const editorialGroups = { split: data.editorialSplit?.images, approach: data.approach?.images };
+    caseModalContent.querySelectorAll('.editorial-lightbox-trigger').forEach((trigger) => {
+      const group = trigger.getAttribute('data-editorial-group');
+      const idx = parseInt(trigger.getAttribute('data-editorial-index'), 10);
+      const imagesList = editorialGroups[group];
+      if (!imagesList) return;
+
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openLightbox(imagesList, idx);
+      });
+      trigger.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          e.stopPropagation();
+          openLightbox(imagesList, idx);
+        }
+      });
+    });
 
     caseModalOverlay.classList.add('is-active');
     caseModalOverlay.setAttribute('aria-hidden', 'false');

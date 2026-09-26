@@ -1820,6 +1820,80 @@ ul, ol {
   font-weight: 400;
 }
 
+/* Editorial Media Stack (2 or more images stacked one below another) */
+.case-editorial-media-stack {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4.5vw, 3.75rem);
+  margin-top: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: clamp(3.5rem, 6.5vw, 6rem);
+}
+
+.case-editorial-media-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.case-editorial-img-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.case-editorial-media-img {
+  width: 100%;
+  height: clamp(380px, 56vh, 640px);
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.65s var(--ease-editorial);
+}
+
+.case-editorial-img-wrap:hover .case-editorial-media-img,
+.case-editorial-img-wrap:focus .case-editorial-media-img {
+  transform: scale(1.025);
+}
+
+/* Editorial expand btn — only needs z-index bump over the glass overlay */
+.case-editorial-img-wrap .gallery-card-expand-btn {
+  z-index: 5;
+}
+
+/* Reveal on editorial image hover (uses base opacity/transform transitions) */
+.case-editorial-img-wrap:hover .gallery-card-expand-btn,
+.case-editorial-img-wrap:focus-within .gallery-card-expand-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.case-editorial-media-caption {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: var(--font-primary);
+  padding: 0 0.25rem;
+}
+
+/* Our Approach Section */
+.case-approach-section {
+  margin-bottom: clamp(3.5rem, 7vw, 6.5rem);
+}
+
+.case-approach-split {
+  border-top: 1px solid var(--border-light);
+  padding-top: 3.5rem;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
 /* Vertical Interactive Media Carousel (Top) & Content (Bottom) */
 .case-split-feature {
   display: flex;
@@ -1924,12 +1998,6 @@ ul, ol {
   pointer-events: none;
 }
 
-.split-video-wrapper .gallery-card-expand-btn {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 5;
-}
 
 .split-image-wrapper img {
   width: 100%;
@@ -2592,7 +2660,7 @@ ul, ol {
   transform: scale(1.035);
 }
 
-/* Glass Expand Button (Top-Right Corner) */
+/* Glass Expand Button (Top-Right Corner) — hidden until parent hover */
 .gallery-card-expand-btn {
   position: absolute;
   top: 1.25rem;
@@ -2610,10 +2678,26 @@ ul, ol {
   justify-content: center;
   z-index: 3;
   cursor: pointer;
-  transition: background-color var(--duration-fast) ease, border-color var(--duration-fast) ease, transform var(--duration-fast) ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.85);
+  transition: opacity 0.25s ease, transform 0.25s ease, background-color var(--duration-fast) ease, border-color var(--duration-fast) ease;
 }
 
+/* Reveal on parent wrapper hover — gallery cards */
 .gallery-card-inner:hover .gallery-card-expand-btn,
+.gallery-card-inner:focus-within .gallery-card-expand-btn,
+/* Reveal on split feature wrappers hover */
+.split-video-wrapper:hover .gallery-card-expand-btn,
+.split-video-wrapper:focus-within .gallery-card-expand-btn,
+.split-image-wrapper:hover .gallery-card-expand-btn,
+.split-image-wrapper:focus-within .gallery-card-expand-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+/* Button-level hover — white fill */
 .gallery-card-expand-btn:hover {
   background: #ffffff;
   color: #000000;
@@ -2706,6 +2790,33 @@ ul, ol {
   color: var(--text-primary);
   letter-spacing: 0.08em;
   margin-left: 0.5rem;
+}
+
+/* --- The Result Section --- */
+.case-result-section {
+  border-top: 1px solid var(--border-light);
+  padding-top: 3.5rem;
+  margin-bottom: clamp(3.5rem, 7vw, 6rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.result-heading {
+  font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-text {
+  font-size: clamp(1.12rem, 1.8vw, 1.35rem);
+  line-height: 1.72;
+  color: var(--text-secondary);
+  max-width: 820px;
+  font-weight: 400;
 }
 
 /* Next & Prev Project Bottom Bar */
@@ -3536,6 +3647,37 @@ ul, ol {
   .carousel-controls {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .case-approach-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .case-editorial-media-img {
+    height: clamp(240px, 38vh, 380px);
+    border-radius: 12px;
+  }
+
+  .case-editorial-img-wrap {
+    border-radius: 12px;
+  }
+
+  .case-result-section {
+    padding-top: 2.25rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .result-heading {
+    font-size: clamp(1.85rem, 6.5vw, 2.6rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .result-text {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   /* Next & Prev Project Bar on Mobile */
