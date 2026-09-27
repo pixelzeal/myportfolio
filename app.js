@@ -720,6 +720,236 @@ oceanquest: {
   prevId: 'edenhouse',
   nextId: 'visitdubai'
 },
+fmf: {
+  title: 'Future Minerals Forum',
+  category: 'Enterprise Platform &bull; Global Industry Forum',
+  client: 'Future Minerals Forum',
+  year: '2025',
+  discipline: 'UX/UI Design & Digital Experience',
+  scope: 'Design Audit, UX Strategy, Benchmarking, Wireframing, Prototyping, Design System',
+  liveUrl: 'https://www.futuremineralsforum.com/',
+  location: 'Riyadh, Saudi Arabia',
+
+  description: 'A comprehensive redesign initiative for the Future Minerals Forum digital platform. The project began as a competitive pitch involving design audits, user experience benchmarking, information architecture studies, wireframes, and visual exploration. The objective was to transform a conference-focused website into a scalable global platform capable of supporting year-round engagement, thought leadership, partnerships, and event experiences for governments, investors, and industry leaders. The Future Minerals Forum serves as a global platform connecting governments, investors, industry leaders, and innovators to strengthen mineral value chains and support sustainable mineral development.',
+
+  heroImage: 'images/fmf-hero.jpg',
+
+  editorialSplit: {
+    col1Heading: '01 / The Brief',
+    col1Text: 'Future Minerals Forum had evolved beyond a traditional annual event into a global platform bringing together governments, investors, industry leaders, and innovators. The challenge was to rethink the digital experience to better communicate the scale, vision, initiatives, knowledge resources, and ongoing impact of the forum.',
+
+    col2Heading: '02 / The Challenge',
+    col2Text: 'The existing experience contained a significant volume of content spanning events, speakers, strategic initiatives, reports, media, partnerships, and investment programs. The redesign needed to improve discoverability, simplify navigation, establish clearer content hierarchies, and create a premium digital experience aligned with the forum’s international stature.',
+
+    images: [
+      {
+        image: 'images/FMF-exploration-01.jpg',
+        caption: 'Competitive Benchmarking & Industry Analysis'
+      },
+      {
+        image: 'images/FMF-exploration-02.jpg',
+        caption: 'Information Architecture & Content Audit'
+      },
+            {
+        image: 'images/FMF-exploration-03.jpg',
+        caption: 'Information Architecture & Content'
+      }
+    ]
+  },
+
+  approach: {
+    col1Heading: '01 / Research & Benchmarking',
+    col1Text: 'The engagement began with a detailed review of the existing platform, competitor benchmarking, stakeholder requirements, and content ecosystem analysis. Multiple event, conference, government, and industry platforms were studied to identify best practices and opportunities for differentiation.',
+
+    col2Heading: '02 / Experience Transformation',
+    col2Text: 'Several design directions were explored through moodboards, wireframes, low-fidelity concepts, and interactive prototypes. The resulting framework established a scalable foundation capable of supporting future forum editions, strategic initiatives, knowledge hubs, media content, and year-round engagement.',
+
+    images: [
+      {
+        image: 'images/FMF-exploration-04.jpg',
+        caption: 'Moodboards, Wireframes & Early Experience Concepts'
+      },
+      {
+        image: 'images/FMF-exploration-05.jpg',
+        caption: 'Moodboards, Wireframes & Early Experience Concepts'
+      },
+      {
+        image: 'images/FMF-exploration-06.jpg',
+        caption: 'Moodboards, Wireframes & Early Experience Concepts'
+      }
+    ]
+  },
+
+  result: {
+    text: 'The redesign established a modern digital foundation for Future Minerals Forum, improving content organization, storytelling, navigation, and scalability. The platform continues to evolve through ongoing enhancements, feature additions, and iterative improvements supporting the forum’s expanding global presence.'
+  },
+
+  splitFeature: {
+    image: 'images/fmf-feature.jpg',
+    eyebrow: 'FROM EVENT WEBSITE TO GLOBAL PLATFORM',
+    quote: 'Designing a digital ecosystem for the future of minerals.',
+    text: 'The redesign focused on creating a future-ready platform capable of supporting conference experiences, knowledge sharing, strategic initiatives, investment programs, media content, and international stakeholder engagement within a unified ecosystem.',
+
+    metrics: [
+      { label: 'Countries', value: '170+' },
+      { label: 'Participants', value: '21K+' },
+      { label: 'Speakers', value: '450+' }
+    ],
+
+    media: [
+      {
+        type: 'image',
+        image: 'images/FMF-exploration-07.jpg',
+        caption: 'Website Audit & Experience Evaluation',
+        badge: 'AUDIT'
+      },
+      {
+        type: 'image',
+        image: 'images/FMF-exploration-08.jpg',
+        caption: 'Navigation & Information Architecture',
+        badge: 'UX STRATEGY'
+      },
+      {
+        type: 'image',
+        image: 'images/FMF-exploration-09.jpg',
+        caption: 'Wireframes & Experience Flows',
+        badge: 'WIREFRAMES'
+      },
+      {
+        type: 'image',
+        image: 'images/FMF-exploration-10.jpg',
+        caption: 'Visual Exploration & Moodboards',
+        badge: 'VISUAL DESIGN'
+      },
+      {
+        type: 'video',
+        src: 'images/fmf-home.mp4',
+        poster: 'images/fmf-video1-poster.jpg',
+        caption: 'Interactive Prototype Concepts',
+        badge: 'PROTOTYPING'
+      },
+      {
+        type: 'video',
+        src: 'images/fmf-home02.mp4',
+        poster: 'images/fmf-video2-poster.jpg',
+        caption: 'Final Responsive Experience',
+        badge: 'DELIVERY'
+      },
+     {
+        type: 'video',
+        src: 'images/fmf-home03.mp4',
+        poster: 'images/fmf-video3-poster.jpg',
+        caption: 'Final Responsive Experience',
+        badge: 'DELIVERY'
+      }
+    ]
+  },
+
+  carousel: [
+    {
+      image: 'images/FMF-exploration-11.jpg',
+      caption: 'Design Audit & User Journey Evaluation'
+    },
+    {
+      image: 'images/FMF-exploration-12.jpg',
+      caption: 'Design Audit & Opportunity Mapping'
+    },
+    {
+      image: 'images/FMF-exploration-13.jpg',
+      caption: 'Wireframing & Content Architecture'
+    },
+    {
+      image: 'images/FMF-exploration-14.jpg',
+      caption: 'Prototype Validation & Experience Design'
+    },
+    {
+      image: 'images/FMF-exploration-15.jpg',
+      caption: 'Prototyping & Interactive Experience Concepts'
+    },
+    {
+      image: 'images/FMF-exploration-16.jpg',
+      caption: 'Prototyping & Interactive Experience Concepts'
+    },
+    {
+      image: 'images/FMF-exploration-17.jpg',
+      caption: 'Prototyping & Interactive Experience Concepts'
+    },
+    {
+      image: 'images/FMF-exploration-18.jpg',
+      caption: 'Prototyping & Interactive Experience Concepts'
+    }
+  ],
+
+  deliverablesList: [
+    {
+      num: '01',
+      title: 'Comprehensive UX Audit',
+      desc: 'Evaluated the existing platform to identify usability issues, content challenges, and optimization opportunities.'
+    },
+    {
+      num: '02',
+      title: 'Benchmarking & Competitive Analysis',
+      desc: 'Studied global conference, government, and industry platforms to establish best-practice recommendations.'
+    },
+    {
+      num: '03',
+      title: 'Information Architecture Redesign',
+      desc: 'Restructured navigation and content hierarchies to improve discoverability and scalability.'
+    },
+    {
+      num: '04',
+      title: 'Wireframes & Interactive Prototypes',
+      desc: 'Developed multiple experience concepts and user journeys for stakeholder review and validation.'
+    },
+    {
+      num: '05',
+      title: 'Visual Design System',
+      desc: 'Created a scalable visual framework supporting future events, initiatives, reports, media, and partner experiences.'
+    }
+  ],
+
+  galleryHeading: 'Building a platform for global collaboration',
+
+  galleryDescription: 'The Future Minerals Forum redesign explored how a large-scale international platform could better support events, knowledge sharing, investment opportunities, partnerships, media content, and strategic initiatives. The work included audits, benchmarking, wireframes, visual exploration, and ongoing design enhancements as the platform continues to evolve.',
+
+  galleryAsymmetric: [
+    {
+      image: 'images/fmf-gallery-01.jpg',
+      caption: 'Experience Audit & Recommendations'
+    },
+    {
+      image: 'images/fmf-gallery-02.jpg',
+      caption: 'Information Architecture Exploration'
+    },
+    {
+      image: 'images/fmf-gallery-03.jpg',
+      caption: 'Wireframe & User Flow Development'
+    },
+    {
+      image: 'images/fmf-gallery-04.jpg',
+      caption: 'Moodboards & Visual Direction'
+    },
+    {
+      image: 'images/fmf-gallery-05.jpg',
+      caption: 'Responsive Platform Design'
+    },
+    {
+      image: 'images/fmf-gallery-06.jpg',
+      caption: 'Responsive Platform Design'
+    },
+    {
+      image: 'images/fmf-gallery-07.jpg',
+      caption: 'Responsive Platform Design'
+    },    
+    {
+      image: 'images/fmf-gallery-08.jpg',
+      caption: 'Responsive Platform Design'
+    },
+  ],
+
+  prevId: 'oceanquest',
+  nextId: 'visitdubai'
+},
     infuse: {
       title: 'Infuse',
       category: 'Web Design &bull; Spatial Audio Showcase',
@@ -1366,7 +1596,7 @@ oceanquest: {
         <div class="case-deliverables-section">
           <div class="deliverables-header">
             <span class="section-kicker">DELIVERABLES &amp; SYSTEM SCOPE</span>
-            <h3 class="deliverables-title">Architectural Milestones Delivered</h3>
+            <h3 class="deliverables-title">Milestones Delivered</h3>
           </div>
           <div class="case-deliverables-list">
             ${data.deliverablesList.map(item => `
