@@ -950,75 +950,216 @@ fmf: {
   prevId: 'oceanquest',
   nextId: 'visitdubai'
 },
-    infuse: {
-      title: 'Infuse',
-      category: 'Web Design &bull; Spatial Audio Showcase',
-      client: 'Infuse Contemporary Sound',
-      year: '2022',
-      discipline: 'Web Design & Spatial Audio',
-      scope: 'Spatial Web Audio, Interactive Canvas, Editorial CMS',
-      location: 'New York, USA',
-      description: 'An interactive listening archive celebrating experimental sound design and spatial acoustics. Featuring tactile audio-reactive waveforms and a brutalist typography grid.',
-      heroImage: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640b894e43138c1b4c26a848_pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg',
-      editorialSplit: {
-        col1Heading: '01 / Acoustic Architecture',
-        col1Text: 'Traditional music archives are static lists. Infuse turns sonic frequencies into interactive three-dimensional wave sculptures that users can navigate in physical browser space.',
-        col2Heading: '02 / Brutalist Audio Grid',
-        col2Text: 'We combined stark black-and-white layout architecture with Web Audio API sound synthesis, delivering an unforgettable digital installation for audiophiles.'
+deepdivedubai: {
+  title: 'Deep Dive Dubai',
+  category: 'Experience Platform &bull; Luxury Adventure Tourism',
+  client: 'Deep Dive Dubai',
+  year: '2025',
+  discipline: 'UX/UI Design & Experience Strategy',
+  scope: 'Website Redesign, UX Research, Moodboards, User Flows, Prototyping, Motion Design',
+  liveUrl: 'https://www.deepdivedubai.com/',
+  location: 'Dubai, U.A.E.',
+
+  description: 'A redesign proposal for Deep Dive Dubai, the world’s deepest diving pool and one of Dubai’s most unique adventure destinations. The project explored how a premium digital experience could better showcase diving experiences, memberships, learning programs, and booking journeys through immersive storytelling, interactive motion, and underwater-inspired visual design.' ,
+
+  heroImage: 'images/deep-dive-hero.jpg',
+
+  editorialSplit: {
+    col1Heading: '01 / The Brief',
+    col1Text: 'Deep Dive Dubai offers a collection of experiences ranging from scuba diving and freediving to specialized training, memberships, and underwater exploration. The goal was to create a richer digital experience capable of communicating the scale of the facility, its unique underwater city, and the variety of experiences available to visitors and certified divers alike. The facility features a 60m-deep underwater city and experiences for beginners through professional divers. :contentReference[oaicite:0]{index=0}',
+
+    col2Heading: '02 / The Challenge',
+    col2Text: 'The existing platform contained diverse user journeys including bookings, memberships, certifications, courses, offers, and visitor information. The challenge was creating a streamlined experience that inspires exploration while making it easy for users to discover the right activity, understand requirements, and complete bookings.'
+    ,
+
+    images: [
+      {
+        image: 'images/deep-dive-exploration-01.jpg',
+        caption: 'Competitive Analysis & Adventure Tourism Benchmarking'
       },
-      splitFeature: {
-        image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-        eyebrow: 'SPATIAL SOUND ENGINE',
-        quote: 'Translating invisible acoustic waves into architectural form.',
-        text: 'A breakthrough in web-based binaural spatialization, allowing listeners to position themselves inside experimental compositions.',
-        metrics: [
-          { label: 'Audio Engine', value: 'WebAudio 3D' },
-          { label: 'Tracks', value: '1,200+' },
-          { label: 'Awards', value: 'FWA SOTD' }
-        ],
-        media: [
-          {
-            type: 'video',
-            src: 'images/jp-video.mp4',
-            poster: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'Spatial Audio Waveform Synthesizer — Real-time WebGL Demo',
-            badge: 'WEBGL DEMO'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg',
-            caption: 'Acoustic Waveform Spatial Model Telemetry',
-            badge: 'HIGH-RES CAPTURE'
-          },
-          {
-            type: 'image',
-            image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640b894e43138c1b4c26a848_pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg',
-            caption: 'Interactive Binaural Audio Controller',
-            badge: 'SYNTHESIS INTERACTION'
-          }
-        ]
+      {
+        image: 'images/deep-dive-exploration-02.jpg',
+        caption: 'Underwater Experience Moodboards & Visual Research'
+      }
+    ]
+  },
+
+  approach: {
+    col1Heading: '01 / Research & Inspiration',
+    col1Text: 'Extensive research was conducted across underwater experiences, luxury tourism platforms, adventure brands, gaming interfaces, and immersive storytelling websites. Multiple moodboards and visual directions were explored before arriving at a cinematic underwater design language inspired by light, depth, and exploration.',
+
+    col2Heading: '02 / Experience-First Design',
+    col2Text: 'The redesign prioritized storytelling and conversion equally. Dedicated experience pages, membership journeys, offers, career opportunities, and booking flows were redesigned to provide visitors with clear pathways while maintaining a premium and immersive brand experience.',
+
+    images: [
+      {
+        image: 'images/deep-dive-exploration-03.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
       },
-      carousel: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640b894e43138c1b4c26a848_pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg', caption: 'Spatial Audio Navigation Canvas' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg', caption: 'Frequency Spectrum Analysis View' }
-      ],
-      deliverablesList: [
-        { num: '01', title: '3D Spatial Audio Player', desc: 'Binaural sound synthesis engine with interactive spatial panning controls.' },
-        { num: '02', title: 'Interactive Frequency Sculptures', desc: 'Real-time WebGL waveform visualizations responsive to master track audio.' },
-        { num: '03', title: 'Editorial Archival Archive', desc: 'Curated discography CMS with custom typography and tactile playback controls.' }
-      ],
-      galleryHeading: 'Acoustic architecture in space',
-      galleryDescription: 'An exploratory gallery featuring binaural frequency telemetry, 3D WebGL waveform sculptures, tactile audio mixer boards, and editorial discography layouts.',
-      galleryAsymmetric: [
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae0274a89af6a7eac58_02.jpg', caption: 'Sound Design Frequency Telemetry' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ae85f5dd25a288bde25_01.jpg', caption: 'Acoustic Waveform Spatial Model' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640b894e43138c1b4c26a848_pawel-czerwinski-OOFSqPWjCt0-unsplash.jpg', caption: 'Interactive Synthesizer Sound Board' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8afddb600b587c981a17_07.jpg', caption: 'Binaural Spatial Panning Environment' },
-        { image: 'https://cdn.prod.website-files.com/64063dd6d2fb8585a5f08004/640f8ad52b298c2c4d370764_06.jpg', caption: 'Spectrum Analysis & Audio Visualization' }
-      ],
-      prevId: 'wealthwave',
-      nextId: 'moneymaven'
+      {
+        image: 'images/deep-dive-exploration-04.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
+      },
+      {
+        image: 'images/deep-dive-exploration-05.jpg',
+        caption: 'Colors, Typography & Visual Design Exploration'
+      },      
+      {
+        image: 'images/deep-dive-exploration-06.jpg',
+        caption: 'Colors, Typography & Visual Design Exploration'
+      },      
+      {
+        image: 'images/deep-dive-exploration-07.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
+      },
+      {
+        image: 'images/deep-dive-exploration-08.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
+      },
+      {
+        image: 'images/deep-dive-exploration-09.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
+      },
+      {
+        image: 'images/deep-dive-exploration-10.jpg',
+        caption: 'Experience Architecture & Interactive Prototype Exploration'
+      }
+    ]
+  },
+
+  result: {
+    text: 'The proposal established a scalable digital framework capable of supporting new experiences, membership programs, promotions, training courses, and future platform enhancements. Interactive prototypes featuring hover states, motion concepts, and immersive transitions helped communicate the vision for a modern underwater adventure platform.'
+  },
+
+  splitFeature: {
+    image: 'images/deep-dive-feature.jpg',
+    eyebrow: 'IMMERSIVE UNDERWATER EXPERIENCES',
+    quote: 'Designing the digital gateway to the world’s most unique diving destination.',
+    text: 'The concept reimagined Deep Dive Dubai as more than a booking platform. Through cinematic visuals, interactive storytelling, and conversion-focused journeys, the redesign positions every experience as an adventure waiting to be discovered.',
+
+    metrics: [
+      { label: 'Pool Depth', value: '60m' },
+      { label: 'Water Volume', value: '14M L' },
+      { label: 'Experience Types', value: '10+' }
+    ],
+
+    media: [
+      {
+        type: 'video',
+        src: 'images/deep-dive-full-website.mp4',
+        poster: 'images/deep-dive-full-website-video-poster.jpg',
+        caption: 'Scuba Diving Experience Landing Page',
+        badge: 'FULL PROTOTYPE'
+      },
+      {
+        type: 'video',
+        src: 'images/deep-dive-prototype.mp4',
+        poster: 'images/deep-dive-homepage-video-poster.jpg',
+        caption: 'Freediving Discovery Experience',
+        badge: 'HOME PROTOTYPE'
+      },
+      {
+        type: 'video',
+        src: 'images/deep-dive-campaign-landing.mp4',
+        poster: 'images/deep-dive-campaign-landing-video-poster.jpg',
+        caption: 'Membership Programs & Benefits',
+        badge: 'CAMPAINGN PAGE'
+      },
+      {
+        type: 'video',
+        src: 'images/deep-dive-campaign-landing2.mp4',
+        poster: 'images/deep-dive-campaign-landing2-video-poster.jpg',
+        caption: 'Offers & Promotions Experience',
+        badge: 'CAMPAINGN PAGE2'
+      }
+    ]
+  },
+
+  carousel: [
+    {
+      image: 'images/deep-dive-feature-01.jpg',
+      caption: 'Offers / Packages'
+    },
+    {
+      image: 'images/deep-dive-feature-02.jpg',
+      caption: 'Freediving, Training & Certification Programs'
+    },
+    {
+      image: 'images/deep-dive-feature-03.jpg',
+      caption: 'MembeNews Events'
+    },
+        {
+      image: 'images/deep-dive-feature-04.jpg',
+      caption: 'Search Results'
+    },
+        {
+      image: 'images/deep-dive-feature-05.jpg',
+      caption: 'About Us'
+    },
+        {
+      image: 'images/deep-dive-feature-06.jpg',
+      caption: 'Pricing'
     }
+  ],
+
+  deliverablesList: [
+    {
+      num: '01',
+      title: 'UX Audit & Experience Benchmarking',
+      desc: 'Evaluated the existing platform and benchmarked leading tourism, adventure, and experiential websites.'
+    },
+    {
+      num: '02',
+      title: 'Visual Exploration & Moodboards',
+      desc: 'Developed multiple underwater-inspired visual directions to define the future experience.'
+    },
+    {
+      num: '03',
+      title: 'Dedicated Experience Pages',
+      desc: 'Designed detailed journeys for scuba diving, freediving, training programs, and specialty experiences.'
+    },
+    {
+      num: '04',
+      title: 'Membership & Booking Experiences',
+      desc: 'Created streamlined membership, offers, and booking flows optimized for conversion.'
+    },
+    {
+      num: '05',
+      title: 'Interactive Prototype System',
+      desc: 'Built high-fidelity prototypes featuring hover interactions, animated transitions, and immersive navigation patterns.'
+    }
+  ],
+
+  galleryHeading: 'Exploring the underwater digital experience',
+
+  galleryDescription: 'The redesign explored how Deep Dive Dubai’s unique underwater environment could influence the digital experience itself. Through motion, immersive imagery, dedicated experience journeys, and interactive storytelling, the concept transformed a traditional tourism website into a destination-driven exploration platform. The project included extensive moodboard development, UX research, wireframing, visual exploration, and high-fidelity prototyping. Deep Dive Dubai is known for its underwater city, scuba and freediving experiences, training programs, and membership offerings. :contentReference[oaicite:1]{index=1}',
+
+  galleryAsymmetric: [
+    {
+      image: 'images/deep-dive-gallery-01.jpg',
+      caption: 'Underwater Experience Discovery'
+    },
+    {
+      image: 'images/deep-dive-gallery-02.jpg',
+      caption: 'Scuba Diving Landing Experience'
+    },
+    {
+      image: 'images/deep-dive-gallery-03.jpg',
+      caption: 'Freediving Program Exploration'
+    },
+    {
+      image: 'images/deep-dive-gallery-04.jpg',
+      caption: 'Membership & Community Journeys'
+    },
+    {
+      image: 'images/deep-dive-gallery-05.jpg',
+      caption: 'Booking Flow & Interactive Prototypes'
+    }
+  ],
+
+  prevId: 'fmf',
+  nextId: 'oceanquest'
+}
   };
 
   // --- 1. Page Veil Loader Dismissal ---
