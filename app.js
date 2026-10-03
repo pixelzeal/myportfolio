@@ -1158,7 +1158,197 @@ deepdivedubai: {
   ],
 
   prevId: 'fmf',
-  nextId: 'oceanquest'
+  nextId: 'wellaffi'
+},
+wellafi: {
+  title: 'Wellafi',
+  category: 'Healthcare Platform &bull; Mobile Membership Experience',
+  client: 'Wellafi',
+  year: '2025',
+  discipline: 'Lead Product & UX/UI Design',
+  scope: 'Mobile App, Design System, Information Architecture, Service Design',
+  location: 'Dubai, U.A.E.',
+  metaExtra: [
+    { label: 'Role', value: 'Senior UX/UI Designer' },
+    { label: 'Platform', value: 'Mobile App' },
+    { label: 'Market', value: 'UAE' },
+    { label: 'Status', value: 'Pre-launch' }
+  ],
+  description: 'Designing a healthcare membership experience for the UAE. Wellafi is a healthcare platform that helps members discover providers, manage healthcare plans, book services, and access package benefits throughout their healthcare journey.',
+
+  heroImage: 'images/wellafi-hero.jpg',
+
+  sections: [
+    {
+      col1Heading: '01 / The Challenge',
+      col1Text: 'Healthcare services are often fragmented across multiple providers and systems. Wellafi aimed to bring healthcare discovery, appointments, memberships, and package benefits into a single experience.',
+      col2Heading: '02 / Benefit Utilization',
+      col2Text: 'A key challenge was helping members understand and use healthcare package benefits over time, including services that become available months after purchase.',
+      images: [
+                {
+          image: 'images/wellafi-packages-mindmap.jpg',
+          caption: 'Package Flow Graphic & Benefit Eligibility System',
+          fullHeight: true
+        }
+      ]
+    },
+    {
+      col1Heading: '03 / My Role',
+      col1Text: 'I led the end-to-end mobile app design process from initial strategy and discovery through to design systems, usability testing, and engineering handoff.',
+      list: [
+        'Stakeholder workshops',
+        'Competitive analysis',
+        'User journeys',
+        'Information architecture',
+        'Wireframing',
+        'Prototyping',
+        'UI design',
+        'Design system',
+        'Usability testing',
+        'Developer handoff',
+        'UAT support'
+      ]
+    },
+    {
+      col1Heading: '04 / Research & Discovery',
+      col1Text: 'I reviewed healthcare platforms such as Thyrocare and PharmEasy to understand common healthcare discovery patterns, package structures, and booking experiences.',
+      col2Heading: '05 / Strategic Insights',
+      col2Text: 'This helped identify opportunities to create a more membership-focused healthcare journey with personalized plan tracking rather than purely transactional bookings.',
+      images: (() => {
+        const arr = [
+          {
+            image: 'images/wellafi-01.jpg',
+            caption: 'Research Board & Discovery Patterns — Healthcare Benchmarking',
+            fullHeight: true
+          },
+          {
+            image: 'images/wellafi-02.jpg',
+            caption: 'Competitor Package Structuring & Journey Mapping',
+            fullHeight: true
+          },
+          {
+            image: 'images/wellafi-03.jpg',
+            caption: 'Research Board & Discovery Patterns — Healthcare Benchmarking',
+            fullHeight: true
+          },{
+            image: 'images/wellafi-04.jpg',
+            caption: 'Research Board & Discovery Patterns — Healthcare Benchmarking',
+            fullHeight: true
+          },{
+            image: 'images/wellafi-05.jpg',
+            caption: 'Research Board & Discovery Patterns — Healthcare Benchmarking',
+            fullHeight: true
+          }
+        ];
+        arr.imageMode = 'carousel';
+        return arr;
+      })()
+    },
+    {
+      col1Heading: '06 / Information Architecture',
+      col1Text: 'The experience was structured around three key areas to ensure intuitive navigation and clear separation of member needs:',
+      pillars: [
+        {
+          title: 'Discover',
+          text: 'Doctors, laboratories, radiology, home care, teleconsultation'
+        },
+        {
+          title: 'Manage',
+          text: 'Plans, packages, benefits, family members'
+        },
+        {
+          title: 'Track',
+          text: 'Appointments, notifications, transactions, records'
+        }
+      ],
+      images: [
+        {
+          image: 'images/wellafi-ia.jpg',
+          caption: 'Information Architecture Hierarchy & User Flow Diagram',
+          fullHeight: true
+        },
+                {
+          image: 'images/wellafi-wf-01.jpg',
+          caption: 'Wireframe',
+          fullHeight: true
+        },
+                {
+          image: 'images/wellafi-wf-02.jpg',
+          caption: 'Wireframe',
+          fullHeight: true
+        }
+      ]
+    },
+    {
+      col1Heading: 'Key Experience #1',
+      col1Text: 'Healthcare Plans & Benefits — Unlike traditional healthcare apps focused on one-time bookings, Wellafi introduced healthcare plans that include consultations, screenings, and recurring services.',
+      col2Heading: 'Eligibility & Timing',
+      col2Text: 'Benefits become available based on eligibility and timing, helping members make full use of their package across their health journey.',
+      images: [
+        {
+          image: 'images/wellafi-plan.jpg',
+          caption: 'Healthcare Plans & Benefit Entitlement Screens',
+          fullHeight: true
+        },
+                {
+          image: 'images/wellafi-package.jpg',
+          caption: 'Healthcare Plans & Benefit Entitlement Screens',
+          fullHeight: true
+        }
+      ]
+    },
+    {
+      col1Heading: 'Key Experience #2',
+      col1Text: 'Search & Provider Discovery — Users can search across doctors, laboratories, and healthcare services through a simplified discovery experience.',
+      col2Heading: 'Exploratory & Direct Search',
+      col2Text: 'The discovery framework was optimized for both specific specialist lookups and open exploratory searches by condition or treatment type.',
+      images: [
+        {
+          image: 'images/wellafi-search.jpg',
+          caption: 'Specialist Search & Facility Discovery Experience',
+          fullHeight: true
+        },
+        {
+          image: 'images/wellafi-search-02.jpg',
+          caption: 'Specialist Search & Facility Discovery Experience',
+          fullHeight: true
+        }
+      ]
+    },
+    {
+      col1Heading: 'Key Experience #3',
+      col1Text: 'Appointment & Activity Management — Appointments are organised into Upcoming, Past, and Cancelled categories, giving users a clear overview of their healthcare activities.',
+      col2Heading: 'Contextual Action',
+      col2Text: 'Each appointment card provides instant access to preparation guides, location wayfinding, teleconsultation links, and calendar syncing.',
+      images: [
+        {
+          image: 'images/deep-dive-exploration-06.jpg',
+          caption: 'Appointment Schedules & Activity History Dashboard',
+          fullHeight: true
+        }
+      ]
+    },
+    {
+      col1Heading: '07 / Design System',
+      col1Text: 'A scalable design system was created to ensure consistency across healthcare services, plans, notifications, and provider experiences.',
+      col2Heading: 'Component System',
+      col2Text: 'The system establishes atomic design foundations, typography scales, accessibility contrasts, and rich component states for complex medical data.',
+      images: [
+        {
+          image: 'images/wellafi-design-system.jpg',
+          caption: 'Design System & Component Library — Color Tokens, Typography & Data Cards',
+          fullHeight: true
+        }
+      ]
+    }
+  ],
+
+  result: {
+    text: 'The project established a complete mobile healthcare ecosystem covering discovery, appointments, memberships, package benefits, payments, family management, and notifications. The design provided the foundation for the product’s future launch in the UAE healthcare market.'
+  },
+
+  prevId: 'deepdivedubai',
+  nextId: 'edenhouse'
 }
   };
 
@@ -1474,6 +1664,80 @@ deepdivedubai: {
     const prevProject = safePrevKey ? projectsData[safePrevKey] : null;
     const nextProject = safeNextKey ? projectsData[safeNextKey] : null;
 
+    // Helper — renders an image group as a stacked list OR inline carousel
+    // Usage in data: { images: [...], imageMode: 'carousel' | 'stack' (default) }
+    // Per-image flag: { image: '...', caption: '...', fullHeight: true }
+    function renderEditorialImages(items, group) {
+      if (!items || !items.length) return '';
+      const imageMode = items.imageMode || 'stack'; // imageMode is set on the array itself
+      const hasMultiple = items.length > 1;
+      const expandIcon = `<svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+      if (imageMode === 'carousel') {
+        return `
+          <div class="case-section-carousel-wrap" data-section-carousel="${group}">
+            <div class="case-section-carousel-viewport${hasMultiple ? '' : ' no-drag'}">
+              <div class="case-section-carousel-track">
+                ${items.map((item, idx) => `
+                  <div class="case-section-carousel-slide editorial-lightbox-trigger"
+                       data-editorial-group="${group}" data-editorial-index="${idx}"
+                       role="button" tabindex="0" aria-label="Open ${item.caption || 'image'} in lightbox">
+                    <img src="${item.image}"
+                         alt="${item.caption || 'Visual'}"
+                         class="case-editorial-media-img${item.fullHeight ? ' case-editorial-media-img--full' : ''}"
+                         loading="lazy" draggable="false" />
+                    <button type="button" class="gallery-card-expand-btn" aria-label="View fullscreen" title="View Fullscreen">
+                      ${expandIcon}
+                    </button>
+                    <div class="split-media-glass-overlay"></div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="case-section-carousel-caption-bar">
+              <span class="case-section-carousel-caption" data-section-caption="${group}">${items[0].caption || ''}</span>
+              ${hasMultiple ? `
+                <div style="display:flex;align-items:center;gap:0.75rem;">
+                  <button type="button" class="carousel-btn case-section-prev-btn" data-section-target="${group}" aria-label="Previous">
+                    <svg viewBox="0 0 16 16" fill="none" class="icon-carousel-arrow"><path d="M10 13L5 8L10 3" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <div class="carousel-dots" style="margin-top:0;">
+                    ${items.map((_, i) => `<button type="button" class="carousel-dot case-section-dot${i === 0 ? ' is-active' : ''}" data-section-dot="${group}" data-index="${i}" aria-label="Slide ${i + 1}"></button>`).join('')}
+                  </div>
+                  <button type="button" class="carousel-btn case-section-next-btn" data-section-target="${group}" aria-label="Next">
+                    <svg viewBox="0 0 16 16" fill="none" class="icon-carousel-arrow"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }
+
+      // Default: stack
+      return `
+        <div class="case-editorial-media-stack" data-editorial-group="${group}">
+          ${items.map((item, idx) => `
+            <div class="case-editorial-media-item">
+              <div class="case-editorial-img-wrap editorial-lightbox-trigger"
+                   data-editorial-group="${group}" data-editorial-index="${idx}"
+                   role="button" tabindex="0" aria-label="Open ${item.caption || 'editorial image'} in Lightbox">
+                <img src="${item.image}"
+                     alt="${item.caption || 'Editorial visual'}"
+                     class="case-editorial-media-img${item.fullHeight ? ' case-editorial-media-img--full' : ''}"
+                     loading="lazy" draggable="false" />
+                <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen" title="View Fullscreen (F)">
+                  ${expandIcon}
+                </button>
+                <div class="split-media-glass-overlay"></div>
+              </div>
+              ${item.caption ? `<span class="case-editorial-media-caption">${item.caption}</span>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
     caseModalContent.innerHTML = `
       <!-- 1. Header & Vertical Meta Split -->
       <div class="case-detail-header">
@@ -1498,6 +1762,12 @@ deepdivedubai: {
               <span class="meta-v-label">Scope</span>
               <span class="meta-v-value">${data.scope}</span>
             </div>
+            ${data.metaExtra ? data.metaExtra.map(m => `
+            <div class="case-meta-vertical-item">
+              <span class="meta-v-label">${m.label}</span>
+              <span class="meta-v-value">${m.value}</span>
+            </div>
+            `).join('') : ''}
             ${data.liveUrl ? `
             <div class="case-meta-vertical-item">
               <span class="meta-v-label">Live URL</span>
@@ -1520,7 +1790,7 @@ deepdivedubai: {
         <img src="${data.heroImage}" alt="${data.title} master visual showcase" class="case-hero-img" loading="lazy" />
       </div>
 
-      <!-- 3. Block: 2-Column Paragraph (Editorial Split) + Optional Image Stack -->
+      <!-- 3. Block: 2-Column Paragraph (Editorial Split) + Optional Image Stack/Carousel -->
       ${data.editorialSplit ? `
         <div class="case-editorial-split">
           <div class="editorial-col">
@@ -1532,24 +1802,7 @@ deepdivedubai: {
             <p class="split-col-text">${data.editorialSplit.col2Text}</p>
           </div>
         </div>
-        ${data.editorialSplit.images && data.editorialSplit.images.length > 0 ? `
-          <div class="case-editorial-media-stack" data-editorial-group="split">
-            ${data.editorialSplit.images.map((item, idx) => `
-              <div class="case-editorial-media-item">
-                <div class="case-editorial-img-wrap editorial-lightbox-trigger" data-editorial-group="split" data-editorial-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'editorial image'} in Lightbox">
-                  <img src="${item.image}" alt="${item.caption || 'Editorial visual'}" class="case-editorial-media-img" loading="lazy" draggable="false" />
-                  <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen" title="View Fullscreen (F)">
-                    <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
-                      <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
-                  <div class="split-media-glass-overlay"></div>
-                </div>
-                ${item.caption ? `<span class="case-editorial-media-caption">${item.caption}</span>` : ''}
-              </div>
-            `).join('')}
-          </div>
-        ` : ''}
+        ${data.editorialSplit.images && data.editorialSplit.images.length > 0 ? renderEditorialImages(data.editorialSplit.images, 'split') : ''}
       ` : ''}
 
       <!-- 4. Block: Our Approach Section (optional — same layout as editorial split + images) -->
@@ -1565,26 +1818,41 @@ deepdivedubai: {
               <p class="split-col-text">${data.approach.col2Text}</p>
             </div>
           </div>
-          ${data.approach.images && data.approach.images.length > 0 ? `
-            <div class="case-editorial-media-stack" data-editorial-group="approach">
-              ${data.approach.images.map((item, idx) => `
-                <div class="case-editorial-media-item">
-                  <div class="case-editorial-img-wrap editorial-lightbox-trigger" data-editorial-group="approach" data-editorial-index="${idx}" role="button" tabindex="0" aria-label="Open ${item.caption || 'approach image'} in Lightbox">
-                    <img src="${item.image}" alt="${item.caption || 'Approach visual'}" class="case-editorial-media-img" loading="lazy" draggable="false" />
-                    <button type="button" class="gallery-card-expand-btn" aria-label="Open fullscreen" title="View Fullscreen (F)">
-                      <svg viewBox="0 0 24 24" fill="none" class="icon-expand-circle">
-                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </button>
-                    <div class="split-media-glass-overlay"></div>
-                  </div>
-                  ${item.caption ? `<span class="case-editorial-media-caption">${item.caption}</span>` : ''}
-                </div>
-              `).join('')}
-            </div>
-          ` : ''}
+          ${data.approach.images && data.approach.images.length > 0 ? renderEditorialImages(data.approach.images, 'approach') : ''}
         </div>
       ` : ''}
+
+      <!-- 4.1. Block: Custom Editorial Sections (Dynamic) -->
+      ${data.sections && data.sections.length > 0 ? data.sections.map((section, sIdx) => `
+        <div class="case-section-block">
+          <div class="case-editorial-split">
+            <div class="editorial-col">
+              ${section.col1Heading ? `<h3 class="split-col-heading">${section.col1Heading}</h3>` : ''}
+              ${section.col1Text ? `<p class="split-col-text">${section.col1Text}</p>` : ''}
+              ${section.list ? `
+                <ul class="case-section-list">
+                  ${section.list.map(li => `<li>${li}</li>`).join('')}
+                </ul>
+              ` : ''}
+            </div>
+            <div class="editorial-col">
+              ${section.col2Heading ? `<h3 class="split-col-heading">${section.col2Heading}</h3>` : ''}
+              ${section.col2Text ? `<p class="split-col-text">${section.col2Text}</p>` : ''}
+              ${section.pillars ? `
+                <div class="case-ia-grid">
+                  ${section.pillars.map(p => `
+                    <div class="case-ia-pillar">
+                      <span class="case-ia-pillar-title">${p.title}</span>
+                      <p class="case-ia-pillar-text">${p.text}</p>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+          ${section.images && section.images.length > 0 ? renderEditorialImages(section.images, `sec-${sIdx}`) : ''}
+        </div>
+      `).join('') : ''}
 
       <!-- 5. Block: Split Feature (carousel images + content) -->
       ${data.splitFeature ? (() => {
@@ -2328,15 +2596,25 @@ deepdivedubai: {
       }
     }
 
-    // Lightbox bindings for editorial media stack images (split section + approach section)
+    // Lightbox bindings for editorial images (stack + carousel modes)
     const editorialGroups = { split: data.editorialSplit?.images, approach: data.approach?.images };
+    if (data.sections) {
+      data.sections.forEach((sec, sIdx) => {
+        if (sec.images) {
+          editorialGroups[`sec-${sIdx}`] = sec.images;
+        }
+      });
+    }
     caseModalContent.querySelectorAll('.editorial-lightbox-trigger').forEach((trigger) => {
       const group = trigger.getAttribute('data-editorial-group');
       const idx = parseInt(trigger.getAttribute('data-editorial-index'), 10);
       const imagesList = editorialGroups[group];
       if (!imagesList) return;
 
+      // For carousel slides, only open lightbox on click (not drag)
+      let sectionHasDragged = false;
       trigger.addEventListener('click', (e) => {
+        if (sectionHasDragged) { sectionHasDragged = false; return; }
         e.stopPropagation();
         openLightbox(imagesList, idx);
       });
@@ -2347,6 +2625,79 @@ deepdivedubai: {
           openLightbox(imagesList, idx);
         }
       });
+    });
+
+    // Initialise inline section carousels (prev/next buttons, dots, drag-to-scroll)
+    caseModalContent.querySelectorAll('.case-section-carousel-wrap').forEach((wrap) => {
+      const group = wrap.getAttribute('data-section-carousel');
+      const viewport = wrap.querySelector('.case-section-carousel-viewport');
+      if (!viewport) return;
+
+      const slides = viewport.querySelectorAll('.case-section-carousel-slide');
+      const totalSlides = slides.length;
+      if (totalSlides <= 1) return;
+
+      const captionEl = wrap.querySelector(`[data-section-caption="${group}"]`);
+      const dots = wrap.querySelectorAll(`[data-section-dot="${group}"]`);
+      const prevBtn = wrap.querySelector(`.case-section-prev-btn[data-section-target="${group}"]`);
+      const nextBtn = wrap.querySelector(`.case-section-next-btn[data-section-target="${group}"]`);
+      const imagesList = editorialGroups[group];
+
+      function getSectionSlideWidth() {
+        return slides[0] ? slides[0].offsetWidth : viewport.clientWidth;
+      }
+      function getActiveSectionIdx() {
+        const w = getSectionSlideWidth();
+        if (w <= 0) return 0;
+        return Math.min(totalSlides - 1, Math.max(0, Math.round(viewport.scrollLeft / w)));
+      }
+      function goToSectionSlide(idx) {
+        const safe = (idx + totalSlides) % totalSlides;
+        viewport.scrollTo({ left: safe * getSectionSlideWidth(), behavior: 'smooth' });
+      }
+      function updateSectionState() {
+        const active = getActiveSectionIdx();
+        if (captionEl && imagesList && imagesList[active]) {
+          captionEl.textContent = imagesList[active].caption || '';
+        }
+        dots.forEach((d, i) => d.classList.toggle('is-active', i === active));
+      }
+
+      // Drag support
+      let isDown = false, startX = 0, scrollStart = 0, hasDragged = false;
+      const onMove = (e) => {
+        if (!isDown) return;
+        const dx = e.pageX - startX;
+        if (Math.abs(dx) > 4) hasDragged = true;
+        viewport.scrollLeft = scrollStart - dx;
+        updateSectionState();
+      };
+      const onUp = () => {
+        if (!isDown) return;
+        isDown = false;
+        viewport.classList.remove('is-dragging');
+        window.removeEventListener('mousemove', onMove);
+        window.removeEventListener('mouseup', onUp);
+        if (hasDragged) goToSectionSlide(getActiveSectionIdx());
+      };
+      viewport.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return;
+        isDown = true; hasDragged = false;
+        startX = e.pageX; scrollStart = viewport.scrollLeft;
+        viewport.classList.add('is-dragging');
+        window.addEventListener('mousemove', onMove);
+        window.addEventListener('mouseup', onUp);
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); goToSectionSlide(getActiveSectionIdx() - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); goToSectionSlide(getActiveSectionIdx() + 1); });
+      dots.forEach((dot) => {
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          goToSectionSlide(parseInt(dot.getAttribute('data-index'), 10));
+        });
+      });
+      viewport.addEventListener('scroll', updateSectionState, { passive: true });
     });
 
     caseModalOverlay.classList.add('is-active');
