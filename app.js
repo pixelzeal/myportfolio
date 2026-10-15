@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       ],
 
-      prevId: 'visitdubai',
+      prevId: 'jumeriahpeninsula',
       nextId: 'wellafi'
     },
     dubaiharbour: {
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
           caption: 'Responsive view'
         }
       ],
-      prevId: 'moneymaven',
+      prevId: 'deepdivedubai',
       nextId: 'jumeriahpeninsula'
     },
     jumeriahpeninsula: {
@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       ],
       prevId: 'dubaiharbour',
-      nextId: 'visit-dubai'
+      nextId: 'edenhouse'
     },
     'visit-dubai': {
       title: 'Visit Dubai',
@@ -542,8 +542,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       ],
 
-      prevId: 'jumeriahpeninsula',
-      nextId: 'wealthwave'
+      prevId: 'wellafi',
+      nextId: 'oceanquest'
     },
 oceanquest: {
   title: 'OceanQuest',
@@ -717,8 +717,8 @@ oceanquest: {
     }
   ],
 
-  prevId: 'edenhouse',
-  nextId: 'visitdubai'
+  prevId: 'visit-dubai',
+  nextId: 'fmf'
 },
 fmf: {
   title: 'Future Minerals Forum',
@@ -948,7 +948,7 @@ fmf: {
   ],
 
   prevId: 'oceanquest',
-  nextId: 'visitdubai'
+  nextId: 'deepdivedubai'
 },
 deepdivedubai: {
   title: 'Deep Dive Dubai',
@@ -1158,7 +1158,7 @@ deepdivedubai: {
   ],
 
   prevId: 'fmf',
-  nextId: 'wellaffi'
+  nextId: 'dubaiharbour'
 },
 wellafi: {
   title: 'Wellafi',
@@ -1347,8 +1347,8 @@ wellafi: {
     text: 'The project established a complete mobile healthcare ecosystem covering discovery, appointments, memberships, package benefits, payments, family management, and notifications. The design provided the foundation for the product’s future launch in the UAE healthcare market.'
   },
 
-  prevId: 'deepdivedubai',
-  nextId: 'edenhouse'
+  prevId: 'edenhouse',
+  nextId: 'visit-dubai'
 }
   };
 
@@ -1607,7 +1607,7 @@ wellafi: {
 
       // Filter project items
       projectItems.forEach((item) => {
-        const itemCategories = item.getAttribute('data-category') || '';
+        const itemCategories = (item.getAttribute('data-category') || '').trim().split(/\s+/);
         if (selectedFilter === 'all' || itemCategories.includes(selectedFilter)) {
           item.classList.remove('is-hidden');
           item.style.opacity = '1';
