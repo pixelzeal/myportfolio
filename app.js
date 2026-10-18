@@ -1309,7 +1309,7 @@ wellafi: {
           fullHeight: true
         },
         {
-          image: 'images/wellafi-search-02.jpg',
+          image: 'images/wellafi-search2.jpg',
           caption: 'Specialist Search & Facility Discovery Experience',
           fullHeight: true
         }
@@ -1322,8 +1322,22 @@ wellafi: {
       col2Text: 'Each appointment card provides instant access to preparation guides, location wayfinding, teleconsultation links, and calendar syncing.',
       images: [
         {
-          image: 'images/deep-dive-exploration-06.jpg',
+          image: 'images/wellafi-appointments-flow.jpg',
           caption: 'Appointment Schedules & Activity History Dashboard',
+          fullHeight: true
+        }
+      ]
+    },
+
+    {
+      col1Heading: 'Key Experience #4',
+      col1Text: 'Transactions & Notifications — Users can view their transaction history, receive notifications for upcoming appointments, and track the status of their healthcare activities.',
+      col2Heading: 'Transactional Transparency',
+      col2Text: 'The system provides clear visibility into payments, refunds, and notifications, ensuring members are informed throughout their healthcare journey.',
+      images: [
+        {
+          image: 'images/wellafi-transactions.jpg',
+          caption: 'Transactions & Notifications Dashboard',
           fullHeight: true
         }
       ]
